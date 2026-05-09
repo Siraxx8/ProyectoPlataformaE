@@ -10,7 +10,7 @@ namespace ProyectoPE
         public static List<string> Claves = new List<string>();
         public static List<string> Roles = new List<string>();
         public static string RolSesionActiva = "";
-        public static List<string> ListaModulos = new List<string> { "Arquitectura", "Antropología", "Cálculo", "Deporte" };
+        public static List<string> ListaModulos = new List<string> { "Arquitectura", "Antropología", "Cálculo", "EducacionF" };
 		public static string UsuarioLogeado;
 		public static bool idiEspañol = true;
 		// Diccionario para guardar puntuaciones individuales
@@ -34,4 +34,3 @@ namespace ProyectoPE
     }
 } 
 }
-

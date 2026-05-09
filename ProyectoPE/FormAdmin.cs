@@ -85,6 +85,72 @@ void BtnGuardarPreguntaClick(object sender, EventArgs e)
 				f.Show();
         		this.Close();
     		}			
+		
+		void BtnCrearMClick(object sender, EventArgs e)
+		{
+// Microsoft.VisualBasic permite usar Interaction.InputBox (debes agregar la referencia)
+    // O puedes usar un TextBox que tengas en el diseño.
+    string nuevoModulo = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nombre del nuevo módulo:", "Crear Módulo");
+
+    if (!string.IsNullOrWhiteSpace(nuevoModulo))
+    {
+        if (!Objetos.ListaModulos.Contains(nuevoModulo))
+        {
+            Objetos.ListaModulos.Add(nuevoModulo);
+            MessageBox.Show("Módulo '" + nuevoModulo + "' creado exitosamente.");
+        }
+        else
+        {
+            MessageBox.Show("Ese módulo ya existe.");
+        }
+    }			
+		}
+		
+		void BtnModificarMClick(object sender, EventArgs e)
+		{
+			string viejoNombre = Microsoft.VisualBasic.Interaction.InputBox("Nombre del módulo que desea cambiar:", "Modificar Módulo");
+
+    if (Objetos.ListaModulos.Contains(viejoNombre))
+    {
+        string nuevoNombre = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nuevo nombre para '" + viejoNombre + "':", "Nuevo Nombre");
+        
+        if (!string.IsNullOrWhiteSpace(nuevoNombre))
+        {
+            int indice = Objetos.ListaModulos.IndexOf(viejoNombre);
+            Objetos.ListaModulos[indice] = nuevoNombre;
+            MessageBox.Show("Módulo actualizado.");
+        }
+    }
+    else if (!string.IsNullOrWhiteSpace(viejoNombre))
+    {
+        MessageBox.Show("El módulo no existe.");
+    }
+		}
+		
+		void BtnVisualizarMClick(object sender, EventArgs e)
+		{
+			string lista = "Módulos actuales:\n\n";
+    foreach (string m in Objetos.ListaModulos)
+    {
+        lista += "- " + m + "\n";
+    }
+    MessageBox.Show(lista, "Lista de Módulos");
+		}
+		
+		void BtnEliminarMClick(object sender, EventArgs e)
+		{
+		string moduloAEliminar = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nombre exacto del módulo a eliminar:", "Eliminar Módulo");
+
+    if (Objetos.ListaModulos.Contains(moduloAEliminar))
+    {
+        Objetos.ListaModulos.Remove(moduloAEliminar);
+        MessageBox.Show("Módulo eliminado correctamente.");
+    }
+    else if (!string.IsNullOrWhiteSpace(moduloAEliminar))
+    {
+        MessageBox.Show("No se encontró ningún módulo con ese nombre.");
+    }	
+		}
 		}
 	}
 

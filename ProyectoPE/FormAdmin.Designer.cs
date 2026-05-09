@@ -49,10 +49,10 @@ namespace ProyectoPE
 			this.label1 = new System.Windows.Forms.Label();
 			this.dgvUsuarios = new System.Windows.Forms.DataGridView();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.button7 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
+			this.btnModificarM = new System.Windows.Forms.Button();
+			this.btnEliminarM = new System.Windows.Forms.Button();
+			this.btnVisualizarM = new System.Windows.Forms.Button();
+			this.btnCrearM = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.button9 = new System.Windows.Forms.Button();
@@ -198,15 +198,16 @@ namespace ProyectoPE
 			this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvUsuarios.Location = new System.Drawing.Point(185, 6);
 			this.dgvUsuarios.Name = "dgvUsuarios";
+			this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvUsuarios.Size = new System.Drawing.Size(446, 236);
 			this.dgvUsuarios.TabIndex = 0;
 			// 
 			// tabPage2
 			// 
-			this.tabPage2.Controls.Add(this.button7);
-			this.tabPage2.Controls.Add(this.button6);
-			this.tabPage2.Controls.Add(this.button5);
-			this.tabPage2.Controls.Add(this.button4);
+			this.tabPage2.Controls.Add(this.btnModificarM);
+			this.tabPage2.Controls.Add(this.btnEliminarM);
+			this.tabPage2.Controls.Add(this.btnVisualizarM);
+			this.tabPage2.Controls.Add(this.btnCrearM);
 			this.tabPage2.Controls.Add(this.label5);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
@@ -216,45 +217,49 @@ namespace ProyectoPE
 			this.tabPage2.Text = "Módulos";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// button7
+			// btnModificarM
 			// 
-			this.button7.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button7.Location = new System.Drawing.Point(314, 79);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(135, 46);
-			this.button7.TabIndex = 12;
-			this.button7.Text = "MODIFICAR";
-			this.button7.UseVisualStyleBackColor = true;
+			this.btnModificarM.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnModificarM.Location = new System.Drawing.Point(314, 79);
+			this.btnModificarM.Name = "btnModificarM";
+			this.btnModificarM.Size = new System.Drawing.Size(135, 46);
+			this.btnModificarM.TabIndex = 12;
+			this.btnModificarM.Text = "MODIFICAR";
+			this.btnModificarM.UseVisualStyleBackColor = true;
+			this.btnModificarM.Click += new System.EventHandler(this.BtnModificarMClick);
 			// 
-			// button6
+			// btnEliminarM
 			// 
-			this.button6.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button6.Location = new System.Drawing.Point(314, 167);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(135, 46);
-			this.button6.TabIndex = 11;
-			this.button6.Text = "ELIMINAR";
-			this.button6.UseVisualStyleBackColor = true;
+			this.btnEliminarM.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEliminarM.Location = new System.Drawing.Point(314, 167);
+			this.btnEliminarM.Name = "btnEliminarM";
+			this.btnEliminarM.Size = new System.Drawing.Size(135, 46);
+			this.btnEliminarM.TabIndex = 11;
+			this.btnEliminarM.Text = "ELIMINAR";
+			this.btnEliminarM.UseVisualStyleBackColor = true;
+			this.btnEliminarM.Click += new System.EventHandler(this.BtnEliminarMClick);
 			// 
-			// button5
+			// btnVisualizarM
 			// 
-			this.button5.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button5.Location = new System.Drawing.Point(149, 167);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(135, 46);
-			this.button5.TabIndex = 10;
-			this.button5.Text = "VISUALIZAR";
-			this.button5.UseVisualStyleBackColor = true;
+			this.btnVisualizarM.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnVisualizarM.Location = new System.Drawing.Point(149, 167);
+			this.btnVisualizarM.Name = "btnVisualizarM";
+			this.btnVisualizarM.Size = new System.Drawing.Size(135, 46);
+			this.btnVisualizarM.TabIndex = 10;
+			this.btnVisualizarM.Text = "VISUALIZAR";
+			this.btnVisualizarM.UseVisualStyleBackColor = true;
+			this.btnVisualizarM.Click += new System.EventHandler(this.BtnVisualizarMClick);
 			// 
-			// button4
+			// btnCrearM
 			// 
-			this.button4.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button4.Location = new System.Drawing.Point(149, 79);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(135, 46);
-			this.button4.TabIndex = 9;
-			this.button4.Text = "CREAR";
-			this.button4.UseVisualStyleBackColor = true;
+			this.btnCrearM.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCrearM.Location = new System.Drawing.Point(149, 79);
+			this.btnCrearM.Name = "btnCrearM";
+			this.btnCrearM.Size = new System.Drawing.Size(135, 46);
+			this.btnCrearM.TabIndex = 9;
+			this.btnCrearM.Text = "CREAR";
+			this.btnCrearM.UseVisualStyleBackColor = true;
+			this.btnCrearM.Click += new System.EventHandler(this.BtnCrearMClick);
 			// 
 			// label5
 			// 
@@ -561,10 +566,10 @@ namespace ProyectoPE
 		private System.Windows.Forms.Button button9;
 		private System.Windows.Forms.TabPage tabPage3;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.Button button5;
-		private System.Windows.Forms.Button button6;
-		private System.Windows.Forms.Button button7;
+		private System.Windows.Forms.Button btnCrearM;
+		private System.Windows.Forms.Button btnVisualizarM;
+		private System.Windows.Forms.Button btnEliminarM;
+		private System.Windows.Forms.Button btnModificarM;
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.DataGridView dgvUsuarios;
 		private System.Windows.Forms.Label label1;
