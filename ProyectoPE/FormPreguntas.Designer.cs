@@ -41,7 +41,7 @@ namespace ProyectoPE
 			this.btnOp3 = new System.Windows.Forms.Button();
 			this.btnOp2 = new System.Windows.Forms.Button();
 			this.btnOp4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
+			this.btnIdioma = new System.Windows.Forms.Button();
 			this.BtnVolver = new System.Windows.Forms.Button();
 			this.lblPregunta = new System.Windows.Forms.Label();
 			this.picComponente = new System.Windows.Forms.PictureBox();
@@ -57,6 +57,7 @@ namespace ProyectoPE
 			this.btnOp1.TabIndex = 0;
 			this.btnOp1.Text = "Opción 1";
 			this.btnOp1.UseVisualStyleBackColor = false;
+			this.btnOp1.Click += new System.EventHandler(this.BtnOp1Click);
 			// 
 			// btnOp3
 			// 
@@ -67,6 +68,7 @@ namespace ProyectoPE
 			this.btnOp3.TabIndex = 1;
 			this.btnOp3.Text = "Opción 3";
 			this.btnOp3.UseVisualStyleBackColor = true;
+			this.btnOp3.Click += new System.EventHandler(this.BtnOp3Click);
 			// 
 			// btnOp2
 			// 
@@ -77,6 +79,7 @@ namespace ProyectoPE
 			this.btnOp2.TabIndex = 2;
 			this.btnOp2.Text = "Opción 2";
 			this.btnOp2.UseVisualStyleBackColor = true;
+			this.btnOp2.Click += new System.EventHandler(this.BtnOp2Click);
 			// 
 			// btnOp4
 			// 
@@ -87,16 +90,18 @@ namespace ProyectoPE
 			this.btnOp4.TabIndex = 3;
 			this.btnOp4.Text = "Opción 4";
 			this.btnOp4.UseVisualStyleBackColor = true;
+			this.btnOp4.Click += new System.EventHandler(this.BtnOp4Click);
 			// 
-			// button5
+			// btnIdioma
 			// 
-			this.button5.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button5.Location = new System.Drawing.Point(12, 406);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(109, 45);
-			this.button5.TabIndex = 4;
-			this.button5.Text = "Cambiar a inglés";
-			this.button5.UseVisualStyleBackColor = true;
+			this.btnIdioma.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnIdioma.Location = new System.Drawing.Point(12, 406);
+			this.btnIdioma.Name = "btnIdioma";
+			this.btnIdioma.Size = new System.Drawing.Size(109, 45);
+			this.btnIdioma.TabIndex = 4;
+			this.btnIdioma.Text = "Idioma/language";
+			this.btnIdioma.UseVisualStyleBackColor = true;
+			this.btnIdioma.Click += new System.EventHandler(this.BtnIdiomaClick);
 			// 
 			// BtnVolver
 			// 
@@ -141,7 +146,7 @@ namespace ProyectoPE
 			this.Controls.Add(this.picComponente);
 			this.Controls.Add(this.lblPregunta);
 			this.Controls.Add(this.BtnVolver);
-			this.Controls.Add(this.button5);
+			this.Controls.Add(this.btnIdioma);
 			this.Controls.Add(this.btnOp4);
 			this.Controls.Add(this.btnOp2);
 			this.Controls.Add(this.btnOp3);
@@ -156,7 +161,7 @@ namespace ProyectoPE
 		private System.Windows.Forms.PictureBox picComponente;
 		private System.Windows.Forms.Label lblPregunta;
 		private System.Windows.Forms.Button BtnVolver;
-		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.Button btnIdioma;
 		private System.Windows.Forms.Button btnOp4;
 		private System.Windows.Forms.Button btnOp2;
 		private System.Windows.Forms.Button btnOp3;

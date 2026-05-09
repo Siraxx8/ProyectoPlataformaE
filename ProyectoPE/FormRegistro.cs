@@ -30,7 +30,10 @@ namespace ProyectoPE
             Objetos.Usuarios.Add(user);
             Objetos.Claves.Add(pass);
             Objetos.Roles.Add(rol);
-
+            
+            if (!Objetos.PuntuacionesJugadores.ContainsKey(user)) {
+       		 Objetos.PuntuacionesJugadores.Add(user, 0);
+            }
             MessageBox.Show("Ya puedes iniciar sesión", "¡Registro exitoso!");
    			MessageBox.Show("Fuiste registrado como: " + cmbRol.Text , "¡Advertencia!");
             VolverAlInicio();

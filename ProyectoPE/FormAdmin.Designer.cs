@@ -40,15 +40,14 @@ namespace ProyectoPE
 			this.Usuarios = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.BtnVolver = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.BtnEliminarUsuario = new System.Windows.Forms.Button();
+			this.BtnGuardar = new System.Windows.Forms.Button();
+			this.txtUsuario = new System.Windows.Forms.TextBox();
+			this.txtPass = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.dgvUsuarios = new System.Windows.Forms.DataGridView();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.button7 = new System.Windows.Forms.Button();
 			this.button6 = new System.Windows.Forms.Button();
@@ -57,7 +56,7 @@ namespace ProyectoPE
 			this.label5 = new System.Windows.Forms.Label();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.button9 = new System.Windows.Forms.Button();
-			this.button8 = new System.Windows.Forms.Button();
+			this.BtnGuardarPregunta = new System.Windows.Forms.Button();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
@@ -77,13 +76,17 @@ namespace ProyectoPE
 			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.cmbModulos = new System.Windows.Forms.ComboBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.Usuarios.SuspendLayout();
 			this.tabPage1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			this.tabPage2.SuspendLayout();
 			this.tabPage3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// Usuarios
@@ -100,15 +103,14 @@ namespace ProyectoPE
 			// tabPage1
 			// 
 			this.tabPage1.Controls.Add(this.BtnVolver);
-			this.tabPage1.Controls.Add(this.button3);
-			this.tabPage1.Controls.Add(this.button2);
-			this.tabPage1.Controls.Add(this.button1);
-			this.tabPage1.Controls.Add(this.textBox2);
-			this.tabPage1.Controls.Add(this.textBox1);
+			this.tabPage1.Controls.Add(this.BtnEliminarUsuario);
+			this.tabPage1.Controls.Add(this.BtnGuardar);
+			this.tabPage1.Controls.Add(this.txtUsuario);
+			this.tabPage1.Controls.Add(this.txtPass);
 			this.tabPage1.Controls.Add(this.label3);
 			this.tabPage1.Controls.Add(this.label2);
 			this.tabPage1.Controls.Add(this.label1);
-			this.tabPage1.Controls.Add(this.dataGridView1);
+			this.tabPage1.Controls.Add(this.dgvUsuarios);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -128,49 +130,41 @@ namespace ProyectoPE
 			this.BtnVolver.UseVisualStyleBackColor = true;
 			this.BtnVolver.Click += new System.EventHandler(this.BtnVolverClick);
 			// 
-			// button3
+			// BtnEliminarUsuario
 			// 
-			this.button3.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.Location = new System.Drawing.Point(20, 60);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(135, 46);
-			this.button3.TabIndex = 8;
-			this.button3.Text = "Ver puntuación";
-			this.button3.UseVisualStyleBackColor = true;
+			this.BtnEliminarUsuario.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnEliminarUsuario.Location = new System.Drawing.Point(15, 90);
+			this.BtnEliminarUsuario.Name = "BtnEliminarUsuario";
+			this.BtnEliminarUsuario.Size = new System.Drawing.Size(135, 46);
+			this.BtnEliminarUsuario.TabIndex = 7;
+			this.BtnEliminarUsuario.Text = "Eliminar Usuario";
+			this.BtnEliminarUsuario.UseVisualStyleBackColor = true;
+			this.BtnEliminarUsuario.Click += new System.EventHandler(this.BtnEliminarUsuarioClick);
 			// 
-			// button2
+			// BtnGuardar
 			// 
-			this.button2.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(20, 128);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(135, 46);
-			this.button2.TabIndex = 7;
-			this.button2.Text = "Eliminar Usuario";
-			this.button2.UseVisualStyleBackColor = true;
+			this.BtnGuardar.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnGuardar.Location = new System.Drawing.Point(530, 275);
+			this.BtnGuardar.Name = "BtnGuardar";
+			this.BtnGuardar.Size = new System.Drawing.Size(87, 36);
+			this.BtnGuardar.TabIndex = 6;
+			this.BtnGuardar.Text = "Guardar";
+			this.BtnGuardar.UseVisualStyleBackColor = true;
+			this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardarClick);
 			// 
-			// button1
+			// txtUsuario
 			// 
-			this.button1.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(530, 275);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(87, 36);
-			this.button1.TabIndex = 6;
-			this.button1.Text = "Guardar";
-			this.button1.UseVisualStyleBackColor = true;
+			this.txtUsuario.Location = new System.Drawing.Point(350, 275);
+			this.txtUsuario.Name = "txtUsuario";
+			this.txtUsuario.Size = new System.Drawing.Size(136, 20);
+			this.txtUsuario.TabIndex = 5;
 			// 
-			// textBox2
+			// txtPass
 			// 
-			this.textBox2.Location = new System.Drawing.Point(350, 275);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(136, 20);
-			this.textBox2.TabIndex = 5;
-			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(350, 310);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(136, 20);
-			this.textBox1.TabIndex = 4;
+			this.txtPass.Location = new System.Drawing.Point(350, 310);
+			this.txtPass.Name = "txtPass";
+			this.txtPass.Size = new System.Drawing.Size(136, 20);
+			this.txtPass.TabIndex = 4;
 			// 
 			// label3
 			// 
@@ -199,13 +193,13 @@ namespace ProyectoPE
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Crear nuevo usuario:";
 			// 
-			// dataGridView1
+			// dgvUsuarios
 			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(185, 6);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(446, 236);
-			this.dataGridView1.TabIndex = 0;
+			this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvUsuarios.Location = new System.Drawing.Point(185, 6);
+			this.dgvUsuarios.Name = "dgvUsuarios";
+			this.dgvUsuarios.Size = new System.Drawing.Size(446, 236);
+			this.dgvUsuarios.TabIndex = 0;
 			// 
 			// tabPage2
 			// 
@@ -274,7 +268,7 @@ namespace ProyectoPE
 			// tabPage3
 			// 
 			this.tabPage3.Controls.Add(this.button9);
-			this.tabPage3.Controls.Add(this.button8);
+			this.tabPage3.Controls.Add(this.BtnGuardarPregunta);
 			this.tabPage3.Controls.Add(this.label12);
 			this.tabPage3.Controls.Add(this.label11);
 			this.tabPage3.Controls.Add(this.label10);
@@ -294,7 +288,9 @@ namespace ProyectoPE
 			this.tabPage3.Controls.Add(this.textBox5);
 			this.tabPage3.Controls.Add(this.textBox4);
 			this.tabPage3.Controls.Add(this.textBox3);
-			this.tabPage3.Controls.Add(this.comboBox1);
+			this.tabPage3.Controls.Add(this.cmbModulos);
+			this.tabPage3.Controls.Add(this.pictureBox2);
+			this.tabPage3.Controls.Add(this.pictureBox1);
 			this.tabPage3.Location = new System.Drawing.Point(4, 22);
 			this.tabPage3.Name = "tabPage3";
 			this.tabPage3.Size = new System.Drawing.Size(637, 338);
@@ -312,15 +308,16 @@ namespace ProyectoPE
 			this.button9.Text = "Modificar";
 			this.button9.UseVisualStyleBackColor = true;
 			// 
-			// button8
+			// BtnGuardarPregunta
 			// 
-			this.button8.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button8.Location = new System.Drawing.Point(318, 302);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(115, 36);
-			this.button8.TabIndex = 20;
-			this.button8.Text = "Guardar";
-			this.button8.UseVisualStyleBackColor = true;
+			this.BtnGuardarPregunta.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnGuardarPregunta.Location = new System.Drawing.Point(318, 302);
+			this.BtnGuardarPregunta.Name = "BtnGuardarPregunta";
+			this.BtnGuardarPregunta.Size = new System.Drawing.Size(115, 36);
+			this.BtnGuardarPregunta.TabIndex = 20;
+			this.BtnGuardarPregunta.Text = "Guardar";
+			this.BtnGuardarPregunta.UseVisualStyleBackColor = true;
+			this.BtnGuardarPregunta.Click += new System.EventHandler(this.BtnGuardarPreguntaClick);
 			// 
 			// label12
 			// 
@@ -469,18 +466,37 @@ namespace ProyectoPE
 			this.textBox3.Size = new System.Drawing.Size(100, 20);
 			this.textBox3.TabIndex = 1;
 			// 
-			// comboBox1
+			// cmbModulos
 			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
+			this.cmbModulos.FormattingEnabled = true;
+			this.cmbModulos.Items.AddRange(new object[] {
 									"Arquitectura y Estructura del computador",
 									"Antropología Filosófica",
 									"Cálculo",
 									"Educación Física"});
-			this.comboBox1.Location = new System.Drawing.Point(35, 46);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(146, 21);
-			this.comboBox1.TabIndex = 0;
+			this.cmbModulos.Location = new System.Drawing.Point(35, 46);
+			this.cmbModulos.Name = "cmbModulos";
+			this.cmbModulos.Size = new System.Drawing.Size(146, 21);
+			this.cmbModulos.TabIndex = 0;
+			this.cmbModulos.SelectedIndexChanged += new System.EventHandler(this.CmbModulosSelectedIndexChanged);
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.Silver;
+			this.pictureBox2.Location = new System.Drawing.Point(35, 124);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(550, 172);
+			this.pictureBox2.TabIndex = 23;
+			this.pictureBox2.TabStop = false;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.Silver;
+			this.pictureBox1.Location = new System.Drawing.Point(269, 29);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(316, 267);
+			this.pictureBox1.TabIndex = 22;
+			this.pictureBox1.TabStop = false;
 			// 
 			// label4
 			// 
@@ -509,15 +525,19 @@ namespace ProyectoPE
 			this.Usuarios.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Button BtnVolver;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox cmbModulos;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.TextBox textBox4;
 		private System.Windows.Forms.TextBox textBox5;
@@ -537,7 +557,7 @@ namespace ProyectoPE
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Button button8;
+		private System.Windows.Forms.Button BtnGuardarPregunta;
 		private System.Windows.Forms.Button button9;
 		private System.Windows.Forms.TabPage tabPage3;
 		private System.Windows.Forms.Label label5;
@@ -546,15 +566,14 @@ namespace ProyectoPE
 		private System.Windows.Forms.Button button6;
 		private System.Windows.Forms.Button button7;
 		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView dgvUsuarios;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.TextBox txtPass;
+		private System.Windows.Forms.TextBox txtUsuario;
+		private System.Windows.Forms.Button BtnGuardar;
+		private System.Windows.Forms.Button BtnEliminarUsuario;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabControl Usuarios;
 	}

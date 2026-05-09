@@ -38,13 +38,13 @@ namespace ProyectoPE
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label1 = new System.Windows.Forms.Label();
+			this.lblMenu = new System.Windows.Forms.Label();
 			this.BtnCerrarSesion = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.btnIdioma = new System.Windows.Forms.Button();
 			this.BtnPanelAdmin = new System.Windows.Forms.Button();
 			this.BtnJugar = new System.Windows.Forms.Button();
 			this.cmbModulos = new System.Windows.Forms.ComboBox();
-			this.label2 = new System.Windows.Forms.Label();
+			this.lblpuntuacion = new System.Windows.Forms.Label();
 			this.lblNombreUsuario = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -60,21 +60,22 @@ namespace ProyectoPE
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
-			// label1
+			// lblMenu
 			// 
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label1.Location = new System.Drawing.Point(231, 9);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(240, 48);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Menú Principal";
+			this.lblMenu.BackColor = System.Drawing.Color.Transparent;
+			this.lblMenu.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblMenu.Location = new System.Drawing.Point(191, 9);
+			this.lblMenu.Name = "lblMenu";
+			this.lblMenu.Size = new System.Drawing.Size(302, 48);
+			this.lblMenu.TabIndex = 1;
+			this.lblMenu.Text = "Menú Principal";
+			this.lblMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// BtnCerrarSesion
 			// 
 			this.BtnCerrarSesion.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnCerrarSesion.Location = new System.Drawing.Point(538, 358);
+			this.BtnCerrarSesion.Location = new System.Drawing.Point(561, 367);
 			this.BtnCerrarSesion.Name = "BtnCerrarSesion";
 			this.BtnCerrarSesion.Size = new System.Drawing.Size(114, 36);
 			this.BtnCerrarSesion.TabIndex = 2;
@@ -82,20 +83,21 @@ namespace ProyectoPE
 			this.BtnCerrarSesion.UseVisualStyleBackColor = true;
 			this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesionClick);
 			// 
-			// button2
+			// btnIdioma
 			// 
-			this.button2.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(32, 358);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(114, 36);
-			this.button2.TabIndex = 3;
-			this.button2.Text = "Cambiar a inglés";
-			this.button2.UseVisualStyleBackColor = true;
+			this.btnIdioma.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnIdioma.Location = new System.Drawing.Point(12, 367);
+			this.btnIdioma.Name = "btnIdioma";
+			this.btnIdioma.Size = new System.Drawing.Size(114, 36);
+			this.btnIdioma.TabIndex = 3;
+			this.btnIdioma.Text = "Idioma/Language";
+			this.btnIdioma.UseVisualStyleBackColor = true;
+			this.btnIdioma.Click += new System.EventHandler(this.BtnIdiomaClick);
 			// 
 			// BtnPanelAdmin
 			// 
 			this.BtnPanelAdmin.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnPanelAdmin.Location = new System.Drawing.Point(262, 367);
+			this.BtnPanelAdmin.Location = new System.Drawing.Point(262, 376);
 			this.BtnPanelAdmin.Name = "BtnPanelAdmin";
 			this.BtnPanelAdmin.Size = new System.Drawing.Size(155, 36);
 			this.BtnPanelAdmin.TabIndex = 4;
@@ -127,16 +129,16 @@ namespace ProyectoPE
 			this.cmbModulos.Size = new System.Drawing.Size(210, 21);
 			this.cmbModulos.TabIndex = 6;
 			// 
-			// label2
+			// lblpuntuacion
 			// 
-			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label2.Location = new System.Drawing.Point(538, 9);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(149, 25);
-			this.label2.TabIndex = 7;
-			this.label2.Text = "Puntuación: 0";
+			this.lblpuntuacion.BackColor = System.Drawing.Color.Transparent;
+			this.lblpuntuacion.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblpuntuacion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblpuntuacion.Location = new System.Drawing.Point(538, 9);
+			this.lblpuntuacion.Name = "lblpuntuacion";
+			this.lblpuntuacion.Size = new System.Drawing.Size(149, 25);
+			this.lblpuntuacion.TabIndex = 7;
+			this.lblpuntuacion.Text = "Puntuación: 0";
 			// 
 			// lblNombreUsuario
 			// 
@@ -157,28 +159,31 @@ namespace ProyectoPE
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(687, 436);
 			this.Controls.Add(this.lblNombreUsuario);
-			this.Controls.Add(this.label2);
+			this.Controls.Add(this.lblpuntuacion);
 			this.Controls.Add(this.cmbModulos);
 			this.Controls.Add(this.BtnJugar);
 			this.Controls.Add(this.BtnPanelAdmin);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.btnIdioma);
 			this.Controls.Add(this.BtnCerrarSesion);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.lblMenu);
 			this.Controls.Add(this.pictureBox1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "FormMenu";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Activated += new System.EventHandler(this.FormMenuActivated);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 		}
 		private System.Windows.Forms.Label lblNombreUsuario;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label lblpuntuacion;
 		private System.Windows.Forms.ComboBox cmbModulos;
 		private System.Windows.Forms.Button BtnJugar;
 		private System.Windows.Forms.Button BtnPanelAdmin;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button btnIdioma;
 		private System.Windows.Forms.Button BtnCerrarSesion;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lblMenu;
 		private System.Windows.Forms.PictureBox pictureBox1;
+		
+		
 	}
 }
