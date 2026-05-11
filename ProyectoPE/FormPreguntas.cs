@@ -20,9 +20,30 @@ namespace ProyectoPE
 
         void CargarPregunta()
         {
+        	//modulo creado por admin
+        	bool idiEspañol = Objetos.idiEspañol;
+
+    // 1. Verificar si es un módulo dinámico (creado por el admin)
+    if (Objetos.PreguntasDinamicas.ContainsKey(modulo))
+    {
+        var datos = Objetos.PreguntasDinamicas[modulo];
+        picComponente.Visible = false; // Opcional: ocultar imagen si no hay para módulos nuevos
+
+        if (idiEspañol) {
+            lblPregunta.Text = datos.PreguntaEsp;
+            EstablecerOpciones(datos.Op1Esp, datos.Op2Esp, datos.Op3Esp, datos.Op4Esp);
+            respuestaCorrecta = datos.RespEsp;
+        } else {
+            lblPregunta.Text = datos.PreguntaIng;
+            EstablecerOpciones(datos.Op1Ing, datos.Op2Ing, datos.Op3Ing, datos.Op4Ing);
+            respuestaCorrecta = datos.RespIng;
+        }
+    }
+        	//Modulos creados por código
+        	
             picComponente.Visible = true;
             picComponente.SizeMode = PictureBoxSizeMode.Zoom;
-            bool idiEspañol = Objetos.idiEspañol;
+            
 
             // ARQUITECTURA
             if (modulo == "Arquitectura y Estructura del Computador")
@@ -35,14 +56,14 @@ namespace ProyectoPE
                     respuestaCorrecta = idiEspañol ? "Se borra" : "It is erased";
                 }
                 else if (numeroPregunta == 2) {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("proce");
                     lblPregunta.Text = idiEspañol ? "¿Cuál es el cerebro de la computadora?" : "What is the brain of the computer?";
                     if (idiEspañol)EstablecerOpciones("Monitor", "CPU", "Mouse", "Teclado");
                     else EstablecerOpciones("Monitor", "CPU", "Mouse", "Keyboard");
                     respuestaCorrecta = idiEspañol ? "CPU" : "CPU";
                 }
                 else {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("ssd");
                     lblPregunta.Text = idiEspañol ? "¿Qué significa SSD?" : "What does SSD stand for?";
                     if (idiEspañol)EstablecerOpciones("Disco Sólido", "Súper Disco", "Sistema Dual", "Sin Datos");
                     else EstablecerOpciones("Solid State Drive", "Super Disk", "Dual System", "No Data");
@@ -60,13 +81,13 @@ namespace ProyectoPE
                 }
                 
                 else if (numeroPregunta == 2) {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("Calculo");
                     lblPregunta.Text = idiEspañol ? "¿Cuánto es 5 * 5?" : "How much is 5 * 5?";
                     EstablecerOpciones("10", "20", "25", "30");
                     respuestaCorrecta = "25";
                 }
                 else {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("Calculo");
                     lblPregunta.Text = idiEspañol ? "¿Raíz cuadrada de 81?" : "Square root of 81?";
                     EstablecerOpciones("7", "8", "9", "10");
                     respuestaCorrecta = "9";
@@ -83,14 +104,14 @@ namespace ProyectoPE
                     respuestaCorrecta = idiEspañol ? "Esencia humana" : "Human essence";
                 }
                 else if (numeroPregunta == 2) {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("rojo");
                     lblPregunta.Text = idiEspañol ? "¿Qué significado tenía el color rojo en la pelicula 'La Aldea'?" : "What was the significance of the color red in the film 'The Village'?";
                     if(idiEspañol)EstablecerOpciones("Peligro", "Protección", "Libertad", "Tristeza");
                     else EstablecerOpciones("Danger", "Protection", "Freedom", "Sadness");
                     respuestaCorrecta = idiEspañol ? "Peligro" : "Danger";
                 }
                 else {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("social");
                     lblPregunta.Text = idiEspañol ? "¿El hombre es un ser social por naturaleza?" : "Is man a social being by nature?";
                     if(idiEspañol)EstablecerOpciones("Sí", "No", "Tal vez", "Solo en fiestas");
                     else EstablecerOpciones("Yes", "No", "Maybe", "Only at parties");
@@ -108,13 +129,13 @@ namespace ProyectoPE
                     respuestaCorrecta = idiEspañol ? "Béisbol" : "Baseball";
                 }
                 else if (numeroPregunta == 2) {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("time");
                     lblPregunta.Text = idiEspañol ? "¿Cuántos minutos dura un tiempo de fútbol?" : "How many minutes in a soccer half?";
                     EstablecerOpciones("30", "45", "60", "90");
                     respuestaCorrecta = "45";
                 }
                 else {
-                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("images");
+                	picComponente.Image = (Bitmap)ProyectoPE.Resource.ResourceManager.GetObject("tarjeta");
                     lblPregunta.Text = idiEspañol ? "¿Qué hace un jugador para ser expulsado en fútbol?" : "What does a player do to get sent off in football?";
                     if (idiEspañol)EstablecerOpciones("Entrada peligrosa", "Empujon leve", "Gritar a un compañero", "Cometer una falta táctica");
                     else EstablecerOpciones("Dangerous tackle", "Minor push", "Shouting at a teammate", "Committing a tactical foul");
@@ -138,7 +159,7 @@ namespace ProyectoPE
             else
             {
                 Objetos.PuntuacionActual = Math.Max(0, Objetos.PuntuacionActual - 5);
-                mensaje = Objetos.idiEspañol ? "Incorrecto. La respuesta era: " + respuestaCorrecta : "Incorrect. The answer was: " + respuestaCorrecta;
+                mensaje = Objetos.idiEspañol ? "Incorrecto -5 puntos. La respuesta era: " + respuestaCorrecta : "Incorrect -5 points. The answer was: " + respuestaCorrecta;
                 titulo = Objetos.idiEspañol ? "Lo siento" : "Sorry";
             }
 
@@ -194,4 +215,6 @@ namespace ProyectoPE
         void BtnOp3Click(object sender, EventArgs e) { ValidarRespuesta(btnOp3.Text); }
         void BtnOp4Click(object sender, EventArgs e) { ValidarRespuesta(btnOp4.Text); }
     }
+    
 }
+

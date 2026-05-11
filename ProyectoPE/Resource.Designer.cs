@@ -103,9 +103,59 @@ namespace ProyectoPE {
 		/// <summary>
 		///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 		/// </summary>
-		internal static System.Drawing.Bitmap images {
+		internal static System.Drawing.Bitmap proce {
 			get {
-				object obj = ResourceManager.GetObject("images", resourceCulture);
+				object obj = ResourceManager.GetObject("proce", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap rojo {
+			get {
+				object obj = ResourceManager.GetObject("rojo", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap social {
+			get {
+				object obj = ResourceManager.GetObject("social", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap ssd {
+			get {
+				object obj = ResourceManager.GetObject("ssd", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap tarjeta {
+			get {
+				object obj = ResourceManager.GetObject("tarjeta", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap time {
+			get {
+				object obj = ResourceManager.GetObject("time", resourceCulture);
 				return ((System.Drawing.Bitmap)(obj));
 			}
 		}

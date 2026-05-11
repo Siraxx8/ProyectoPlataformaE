@@ -64,18 +64,18 @@ namespace ProyectoPE
 			this.label8 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox14 = new System.Windows.Forms.TextBox();
-			this.textBox13 = new System.Windows.Forms.TextBox();
-			this.textBox12 = new System.Windows.Forms.TextBox();
-			this.textBox11 = new System.Windows.Forms.TextBox();
-			this.textBox10 = new System.Windows.Forms.TextBox();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.textBox8 = new System.Windows.Forms.TextBox();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.txtRespIng = new System.Windows.Forms.TextBox();
+			this.txtPreguntaIng = new System.Windows.Forms.TextBox();
+			this.txtOp1Esp = new System.Windows.Forms.TextBox();
+			this.txtOp4Esp = new System.Windows.Forms.TextBox();
+			this.txtOp4Ing = new System.Windows.Forms.TextBox();
+			this.txtOp3Ing = new System.Windows.Forms.TextBox();
+			this.txtOp1Ing = new System.Windows.Forms.TextBox();
+			this.txtOp3Esp = new System.Windows.Forms.TextBox();
+			this.txtOp2Esp = new System.Windows.Forms.TextBox();
+			this.txtOp2Ing = new System.Windows.Forms.TextBox();
+			this.txtRespEsp = new System.Windows.Forms.TextBox();
+			this.txtPreguntaEsp = new System.Windows.Forms.TextBox();
 			this.cmbModulos = new System.Windows.Forms.ComboBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -281,18 +281,18 @@ namespace ProyectoPE
 			this.tabPage3.Controls.Add(this.label8);
 			this.tabPage3.Controls.Add(this.label7);
 			this.tabPage3.Controls.Add(this.label6);
-			this.tabPage3.Controls.Add(this.textBox14);
-			this.tabPage3.Controls.Add(this.textBox13);
-			this.tabPage3.Controls.Add(this.textBox12);
-			this.tabPage3.Controls.Add(this.textBox11);
-			this.tabPage3.Controls.Add(this.textBox10);
-			this.tabPage3.Controls.Add(this.textBox9);
-			this.tabPage3.Controls.Add(this.textBox8);
-			this.tabPage3.Controls.Add(this.textBox7);
-			this.tabPage3.Controls.Add(this.textBox6);
-			this.tabPage3.Controls.Add(this.textBox5);
-			this.tabPage3.Controls.Add(this.textBox4);
-			this.tabPage3.Controls.Add(this.textBox3);
+			this.tabPage3.Controls.Add(this.txtRespIng);
+			this.tabPage3.Controls.Add(this.txtPreguntaIng);
+			this.tabPage3.Controls.Add(this.txtOp1Esp);
+			this.tabPage3.Controls.Add(this.txtOp4Esp);
+			this.tabPage3.Controls.Add(this.txtOp4Ing);
+			this.tabPage3.Controls.Add(this.txtOp3Ing);
+			this.tabPage3.Controls.Add(this.txtOp1Ing);
+			this.tabPage3.Controls.Add(this.txtOp3Esp);
+			this.tabPage3.Controls.Add(this.txtOp2Esp);
+			this.tabPage3.Controls.Add(this.txtOp2Ing);
+			this.tabPage3.Controls.Add(this.txtRespEsp);
+			this.tabPage3.Controls.Add(this.txtPreguntaEsp);
 			this.tabPage3.Controls.Add(this.cmbModulos);
 			this.tabPage3.Controls.Add(this.pictureBox2);
 			this.tabPage3.Controls.Add(this.pictureBox1);
@@ -387,89 +387,89 @@ namespace ProyectoPE
 			this.label6.TabIndex = 13;
 			this.label6.Text = "Opciones en español:";
 			// 
-			// textBox14
+			// txtRespIng
 			// 
-			this.textBox14.Location = new System.Drawing.Point(333, 266);
-			this.textBox14.Name = "textBox14";
-			this.textBox14.Size = new System.Drawing.Size(100, 20);
-			this.textBox14.TabIndex = 12;
+			this.txtRespIng.Location = new System.Drawing.Point(333, 266);
+			this.txtRespIng.Name = "txtRespIng";
+			this.txtRespIng.Size = new System.Drawing.Size(100, 20);
+			this.txtRespIng.TabIndex = 12;
 			// 
-			// textBox13
+			// txtPreguntaIng
 			// 
-			this.textBox13.Location = new System.Drawing.Point(411, 86);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(100, 20);
-			this.textBox13.TabIndex = 11;
+			this.txtPreguntaIng.Location = new System.Drawing.Point(411, 86);
+			this.txtPreguntaIng.Name = "txtPreguntaIng";
+			this.txtPreguntaIng.Size = new System.Drawing.Size(100, 20);
+			this.txtPreguntaIng.TabIndex = 11;
 			// 
-			// textBox12
+			// txtOp1Esp
 			// 
-			this.textBox12.Location = new System.Drawing.Point(45, 161);
-			this.textBox12.Name = "textBox12";
-			this.textBox12.Size = new System.Drawing.Size(100, 20);
-			this.textBox12.TabIndex = 10;
+			this.txtOp1Esp.Location = new System.Drawing.Point(45, 161);
+			this.txtOp1Esp.Name = "txtOp1Esp";
+			this.txtOp1Esp.Size = new System.Drawing.Size(100, 20);
+			this.txtOp1Esp.TabIndex = 10;
 			// 
-			// textBox11
+			// txtOp4Esp
 			// 
-			this.textBox11.Location = new System.Drawing.Point(176, 209);
-			this.textBox11.Name = "textBox11";
-			this.textBox11.Size = new System.Drawing.Size(100, 20);
-			this.textBox11.TabIndex = 9;
+			this.txtOp4Esp.Location = new System.Drawing.Point(176, 209);
+			this.txtOp4Esp.Name = "txtOp4Esp";
+			this.txtOp4Esp.Size = new System.Drawing.Size(100, 20);
+			this.txtOp4Esp.TabIndex = 9;
 			// 
-			// textBox10
+			// txtOp4Ing
 			// 
-			this.textBox10.Location = new System.Drawing.Point(463, 209);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(100, 20);
-			this.textBox10.TabIndex = 8;
+			this.txtOp4Ing.Location = new System.Drawing.Point(463, 209);
+			this.txtOp4Ing.Name = "txtOp4Ing";
+			this.txtOp4Ing.Size = new System.Drawing.Size(100, 20);
+			this.txtOp4Ing.TabIndex = 8;
 			// 
-			// textBox9
+			// txtOp3Ing
 			// 
-			this.textBox9.Location = new System.Drawing.Point(333, 209);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(100, 20);
-			this.textBox9.TabIndex = 7;
+			this.txtOp3Ing.Location = new System.Drawing.Point(333, 209);
+			this.txtOp3Ing.Name = "txtOp3Ing";
+			this.txtOp3Ing.Size = new System.Drawing.Size(100, 20);
+			this.txtOp3Ing.TabIndex = 7;
 			// 
-			// textBox8
+			// txtOp1Ing
 			// 
-			this.textBox8.Location = new System.Drawing.Point(333, 161);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(100, 20);
-			this.textBox8.TabIndex = 6;
+			this.txtOp1Ing.Location = new System.Drawing.Point(333, 161);
+			this.txtOp1Ing.Name = "txtOp1Ing";
+			this.txtOp1Ing.Size = new System.Drawing.Size(100, 20);
+			this.txtOp1Ing.TabIndex = 6;
 			// 
-			// textBox7
+			// txtOp3Esp
 			// 
-			this.textBox7.Location = new System.Drawing.Point(45, 209);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(100, 20);
-			this.textBox7.TabIndex = 5;
+			this.txtOp3Esp.Location = new System.Drawing.Point(45, 209);
+			this.txtOp3Esp.Name = "txtOp3Esp";
+			this.txtOp3Esp.Size = new System.Drawing.Size(100, 20);
+			this.txtOp3Esp.TabIndex = 5;
 			// 
-			// textBox6
+			// txtOp2Esp
 			// 
-			this.textBox6.Location = new System.Drawing.Point(176, 161);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(100, 20);
-			this.textBox6.TabIndex = 4;
+			this.txtOp2Esp.Location = new System.Drawing.Point(176, 161);
+			this.txtOp2Esp.Name = "txtOp2Esp";
+			this.txtOp2Esp.Size = new System.Drawing.Size(100, 20);
+			this.txtOp2Esp.TabIndex = 4;
 			// 
-			// textBox5
+			// txtOp2Ing
 			// 
-			this.textBox5.Location = new System.Drawing.Point(463, 161);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(100, 20);
-			this.textBox5.TabIndex = 3;
+			this.txtOp2Ing.Location = new System.Drawing.Point(463, 161);
+			this.txtOp2Ing.Name = "txtOp2Ing";
+			this.txtOp2Ing.Size = new System.Drawing.Size(100, 20);
+			this.txtOp2Ing.TabIndex = 3;
 			// 
-			// textBox4
+			// txtRespEsp
 			// 
-			this.textBox4.Location = new System.Drawing.Point(45, 266);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 20);
-			this.textBox4.TabIndex = 2;
+			this.txtRespEsp.Location = new System.Drawing.Point(45, 266);
+			this.txtRespEsp.Name = "txtRespEsp";
+			this.txtRespEsp.Size = new System.Drawing.Size(100, 20);
+			this.txtRespEsp.TabIndex = 2;
 			// 
-			// textBox3
+			// txtPreguntaEsp
 			// 
-			this.textBox3.Location = new System.Drawing.Point(411, 46);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(100, 20);
-			this.textBox3.TabIndex = 1;
+			this.txtPreguntaEsp.Location = new System.Drawing.Point(411, 46);
+			this.txtPreguntaEsp.Name = "txtPreguntaEsp";
+			this.txtPreguntaEsp.Size = new System.Drawing.Size(100, 20);
+			this.txtPreguntaEsp.TabIndex = 1;
 			// 
 			// cmbModulos
 			// 
@@ -483,7 +483,7 @@ namespace ProyectoPE
 			this.cmbModulos.Name = "cmbModulos";
 			this.cmbModulos.Size = new System.Drawing.Size(146, 21);
 			this.cmbModulos.TabIndex = 0;
-			this.cmbModulos.SelectedIndexChanged += new System.EventHandler(this.CmbModulosSelectedIndexChanged);
+			
 			// 
 			// pictureBox2
 			// 
@@ -543,18 +543,18 @@ namespace ProyectoPE
 		private System.Windows.Forms.Button BtnVolver;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.ComboBox cmbModulos;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.TextBox textBox12;
-		private System.Windows.Forms.TextBox textBox13;
-		private System.Windows.Forms.TextBox textBox14;
+		private System.Windows.Forms.TextBox txtPreguntaEsp;
+		private System.Windows.Forms.TextBox txtRespEsp;
+		private System.Windows.Forms.TextBox txtOp2Ing;
+		private System.Windows.Forms.TextBox txtOp2Esp;
+		private System.Windows.Forms.TextBox txtOp3Esp;
+		private System.Windows.Forms.TextBox txtOp1Ing;
+		private System.Windows.Forms.TextBox txtOp3Ing;
+		private System.Windows.Forms.TextBox txtOp4Ing;
+		private System.Windows.Forms.TextBox txtOp4Esp;
+		private System.Windows.Forms.TextBox txtOp1Esp;
+		private System.Windows.Forms.TextBox txtPreguntaIng;
+		private System.Windows.Forms.TextBox txtRespIng;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label8;

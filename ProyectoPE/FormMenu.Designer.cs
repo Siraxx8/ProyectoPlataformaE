@@ -43,7 +43,7 @@ namespace ProyectoPE
 			this.btnIdioma = new System.Windows.Forms.Button();
 			this.BtnPanelAdmin = new System.Windows.Forms.Button();
 			this.BtnJugar = new System.Windows.Forms.Button();
-			this.cmbModulos = new System.Windows.Forms.ComboBox();
+			this.cmbModulosJugador = new System.Windows.Forms.ComboBox();
 			this.lblpuntuacion = new System.Windows.Forms.Label();
 			this.lblNombreUsuario = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -116,18 +116,18 @@ namespace ProyectoPE
 			this.BtnJugar.UseVisualStyleBackColor = true;
 			this.BtnJugar.Click += new System.EventHandler(this.BtnJugarClick);
 			// 
-			// cmbModulos
+			// cmbModulosJugador
 			// 
-			this.cmbModulos.FormattingEnabled = true;
-			this.cmbModulos.Items.AddRange(new object[] {
+			this.cmbModulosJugador.FormattingEnabled = true;
+			this.cmbModulosJugador.Items.AddRange(new object[] {
 									"Arquitectura y Estructura del Computador",
 									"Antropología Filosófica",
 									"Cálculo",
 									"Educación Física"});
-			this.cmbModulos.Location = new System.Drawing.Point(231, 300);
-			this.cmbModulos.Name = "cmbModulos";
-			this.cmbModulos.Size = new System.Drawing.Size(210, 21);
-			this.cmbModulos.TabIndex = 6;
+			this.cmbModulosJugador.Location = new System.Drawing.Point(231, 300);
+			this.cmbModulosJugador.Name = "cmbModulosJugador";
+			this.cmbModulosJugador.Size = new System.Drawing.Size(210, 21);
+			this.cmbModulosJugador.TabIndex = 6;
 			// 
 			// lblpuntuacion
 			// 
@@ -160,7 +160,7 @@ namespace ProyectoPE
 			this.ClientSize = new System.Drawing.Size(687, 436);
 			this.Controls.Add(this.lblNombreUsuario);
 			this.Controls.Add(this.lblpuntuacion);
-			this.Controls.Add(this.cmbModulos);
+			this.Controls.Add(this.cmbModulosJugador);
 			this.Controls.Add(this.BtnJugar);
 			this.Controls.Add(this.BtnPanelAdmin);
 			this.Controls.Add(this.btnIdioma);
@@ -176,7 +176,7 @@ namespace ProyectoPE
 		}
 		private System.Windows.Forms.Label lblNombreUsuario;
 		private System.Windows.Forms.Label lblpuntuacion;
-		private System.Windows.Forms.ComboBox cmbModulos;
+		private System.Windows.Forms.ComboBox cmbModulosJugador;
 		private System.Windows.Forms.Button BtnJugar;
 		private System.Windows.Forms.Button BtnPanelAdmin;
 		private System.Windows.Forms.Button btnIdioma;

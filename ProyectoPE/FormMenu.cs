@@ -14,6 +14,8 @@ namespace ProyectoPE
 		InitializeComponent();
 		ConfigurarVistaPorRol();
 		ActualizarTextos();
+		ActualizarComboModulos();
+		
 		lblNombreUsuario.Text = "Usuario: " + Objetos.UsuarioLogeado;
 		}
 		
@@ -45,9 +47,9 @@ namespace ProyectoPE
 
         void BtnJugarClick(object sender, EventArgs e)
         {
-            if (cmbModulos.SelectedIndex != -1) 
+            if (cmbModulosJugador.SelectedIndex != -1) 
     		{
-		        FormPreguntas ventanaJuego = new FormPreguntas(cmbModulos.Text);
+		        FormPreguntas ventanaJuego = new FormPreguntas(cmbModulosJugador.Text);
 		        ventanaJuego.Show();
 		        this.Hide(); 
 		    }
@@ -56,6 +58,7 @@ namespace ProyectoPE
 		        string mensaje = Objetos.idiEspañol ? "¡Seleccione un módulo!" : "Please select a module!";
     			MessageBox.Show(mensaje);
 		    }
+		    ActualizarComboModulos();
 		            
         }
 		void BtnPanelAdminClick(object sender, EventArgs e)
@@ -98,5 +101,15 @@ namespace ProyectoPE
 		{
 			ActualizarTextos();
 		}
+		
+		void ActualizarComboModulos()
+		{
+    	cmbModulosJugador.Items.Clear();
+   		foreach(string m in Objetos.ListaModulos)
+    		{
+        cmbModulosJugador.Items.Add(m);
+    		}
+   		
+	}
 	}
 }

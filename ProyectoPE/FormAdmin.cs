@@ -12,6 +12,7 @@ namespace ProyectoPE
 			InitializeComponent();
 			this.esEspanol = idiomaActual;
 			ActualizarTabla();
+			ActualizarComboModulos();
 		}
 		void ActualizarTabla()
 			{
@@ -62,19 +63,56 @@ namespace ProyectoPE
         txtPass.Clear();
     }
 }
-		// Al cambiar el módulo en el ComboBox
-void CmbModulosSelectedIndexChanged(object sender, EventArgs e)
-{
-    // Aquí podrías cargar los textos actuales en los TextBox 
-    // para que el admin sepa qué está modificando.
-}
+		
+    void ActualizarComboModulos()
+		{
+    	// Limpiamos los items actuales
+    cmbModulos.Items.Clear();
+    
+    // Recorremos la lista global y los añadimos al ComboBox
+    foreach (string m in Objetos.ListaModulos)
+    {
+        cmbModulos.Items.Add(m);
+    }
+    
+    // Opcional: Seleccionar el primer elemento si la lista no está vacía
+    if (cmbModulos.Items.Count > 0)
+    {
+        cmbModulos.SelectedIndex = 0;
+    }
+	}
+
 
 void BtnGuardarPreguntaClick(object sender, EventArgs e)
 {
-    // Nota: Para que esto sea permanente, deberías crear una lista de 
-    // objetos "Pregunta" en la clase Objetos. 
-    // Por ahora, podrías enviar un mensaje de confirmación:
-    MessageBox.Show("Pregunta actualizada para el módulo: " + cmbModulos.Text);
+    string moduloSel = cmbModulos.Text;
+    if (string.IsNullOrEmpty(moduloSel)) return;
+
+    Objetos.DatosPregunta nuevaP = new Objetos.DatosPregunta();
+    
+    // Capturamos textos en español
+    nuevaP.PreguntaEsp = txtPreguntaEsp.Text;
+    nuevaP.Op1Esp = txtOp1Esp.Text; // Asegúrate que estos nombres sean tus TextBox
+    nuevaP.Op2Esp = txtOp2Esp.Text;
+    nuevaP.Op3Esp = txtOp3Esp.Text;
+    nuevaP.Op4Esp = txtOp4Esp.Text;
+    nuevaP.RespEsp = txtRespEsp.Text;
+
+    // Capturamos textos en inglés
+    nuevaP.PreguntaIng = txtPreguntaIng.Text;
+    nuevaP.Op1Ing = txtOp1Ing.Text;
+    nuevaP.Op2Ing = txtOp2Ing.Text;
+    nuevaP.Op3Ing = txtOp3Ing.Text;
+    nuevaP.Op4Ing = txtOp4Ing.Text;
+    nuevaP.RespIng = txtRespIng.Text;
+
+    // Guardamos o actualizamos en el diccionario global
+    if (Objetos.PreguntasDinamicas.ContainsKey(moduloSel))
+        Objetos.PreguntasDinamicas[moduloSel] = nuevaP;
+    else
+        Objetos.PreguntasDinamicas.Add(moduloSel, nuevaP);
+
+    MessageBox.Show("Datos del módulo " + moduloSel + " guardados correctamente.");
 }
 		
 		bool esEspanol;
@@ -88,8 +126,8 @@ void BtnGuardarPreguntaClick(object sender, EventArgs e)
 		
 		void BtnCrearMClick(object sender, EventArgs e)
 		{
-// Microsoft.VisualBasic permite usar Interaction.InputBox (debes agregar la referencia)
-    // O puedes usar un TextBox que tengas en el diseño.
+// Microsoft.VisualBasic permite usar Interaction.InputBox 
+    
     string nuevoModulo = Microsoft.VisualBasic.Interaction.InputBox("Ingrese el nombre del nuevo módulo:", "Crear Módulo");
 
     if (!string.IsNullOrWhiteSpace(nuevoModulo))
@@ -103,7 +141,8 @@ void BtnGuardarPreguntaClick(object sender, EventArgs e)
         {
             MessageBox.Show("Ese módulo ya existe.");
         }
-    }			
+    }	
+    ActualizarComboModulos();
 		}
 		
 		void BtnModificarMClick(object sender, EventArgs e)
@@ -125,6 +164,7 @@ void BtnGuardarPreguntaClick(object sender, EventArgs e)
     {
         MessageBox.Show("El módulo no existe.");
     }
+    ActualizarComboModulos();
 		}
 		
 		void BtnVisualizarMClick(object sender, EventArgs e)
@@ -135,6 +175,7 @@ void BtnGuardarPreguntaClick(object sender, EventArgs e)
         lista += "- " + m + "\n";
     }
     MessageBox.Show(lista, "Lista de Módulos");
+    ActualizarComboModulos();
 		}
 		
 		void BtnEliminarMClick(object sender, EventArgs e)
@@ -150,8 +191,10 @@ void BtnGuardarPreguntaClick(object sender, EventArgs e)
     {
         MessageBox.Show("No se encontró ningún módulo con ese nombre.");
     }	
+    ActualizarComboModulos();
 		}
 		}
 	}
+	
 
 
