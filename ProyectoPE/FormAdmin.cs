@@ -15,7 +15,7 @@ namespace ProyectoPE
 		{
 			InitializeComponent();
 			this.esEspanol = idiomaActual;
-			
+			Actualizartextos();
 			ActualizarComboModulos();
 			Cargarusuarios();
 		}
@@ -259,6 +259,25 @@ namespace ProyectoPE
 				MessageBox.Show("No se encontró ningún módulo con ese nombre.");
 			}
 			ActualizarComboModulos();
+		}
+		void Actualizartextos(){
+		if (Objetos.idiEspañol) {
+			lblcrearnu.Text = "Crear nuevo usuario:";
+			lblusu.Text = "Usuario:";
+			lblcontr.Text = "Contraseña:";
+			BtnEliminarUsuario.Text = "Eliminar usuario";
+			BtnGuardar.Text = "Guardar";
+			BtnVolver.Text = "Volver";
+		}
+			else{
+			lblcrearnu.Text = "Create new user:";
+			lblusu.Text = "User:";
+			lblcontr.Text = "Password:";
+			BtnEliminarUsuario.Text = "Delete user";
+			BtnGuardar.Text = "Save";
+			BtnVolver.Text = "Return";
+			
+			}
 		}
 		
 		

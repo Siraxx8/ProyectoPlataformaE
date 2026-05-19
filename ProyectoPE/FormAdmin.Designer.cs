@@ -38,23 +38,23 @@ namespace ProyectoPE
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
 			this.Usuarios = new System.Windows.Forms.TabControl();
-			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.tabusu = new System.Windows.Forms.TabPage();
 			this.BtnVolver = new System.Windows.Forms.Button();
 			this.BtnEliminarUsuario = new System.Windows.Forms.Button();
 			this.BtnGuardar = new System.Windows.Forms.Button();
 			this.txtUsuario = new System.Windows.Forms.TextBox();
 			this.txtPass = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
+			this.lblcontr = new System.Windows.Forms.Label();
+			this.lblusu = new System.Windows.Forms.Label();
+			this.lblcrearnu = new System.Windows.Forms.Label();
 			this.dgvUsuarios = new System.Windows.Forms.DataGridView();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.tabmod = new System.Windows.Forms.TabPage();
 			this.btnModificarM = new System.Windows.Forms.Button();
 			this.btnEliminarM = new System.Windows.Forms.Button();
 			this.btnVisualizarM = new System.Windows.Forms.Button();
 			this.btnCrearM = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
-			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.tabpreg = new System.Windows.Forms.TabPage();
 			this.button9 = new System.Windows.Forms.Button();
 			this.BtnGuardarPregunta = new System.Windows.Forms.Button();
 			this.label12 = new System.Windows.Forms.Label();
@@ -81,44 +81,44 @@ namespace ProyectoPE
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.Usuarios.SuspendLayout();
-			this.tabPage1.SuspendLayout();
+			this.tabusu.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
-			this.tabPage2.SuspendLayout();
-			this.tabPage3.SuspendLayout();
+			this.tabmod.SuspendLayout();
+			this.tabpreg.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// Usuarios
 			// 
-			this.Usuarios.Controls.Add(this.tabPage1);
-			this.Usuarios.Controls.Add(this.tabPage2);
-			this.Usuarios.Controls.Add(this.tabPage3);
+			this.Usuarios.Controls.Add(this.tabusu);
+			this.Usuarios.Controls.Add(this.tabmod);
+			this.Usuarios.Controls.Add(this.tabpreg);
 			this.Usuarios.Location = new System.Drawing.Point(23, 58);
 			this.Usuarios.Name = "Usuarios";
 			this.Usuarios.SelectedIndex = 0;
 			this.Usuarios.Size = new System.Drawing.Size(645, 364);
 			this.Usuarios.TabIndex = 1;
 			// 
-			// tabPage1
+			// tabusu
 			// 
-			this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-			this.tabPage1.Controls.Add(this.BtnVolver);
-			this.tabPage1.Controls.Add(this.BtnEliminarUsuario);
-			this.tabPage1.Controls.Add(this.BtnGuardar);
-			this.tabPage1.Controls.Add(this.txtUsuario);
-			this.tabPage1.Controls.Add(this.txtPass);
-			this.tabPage1.Controls.Add(this.label3);
-			this.tabPage1.Controls.Add(this.label2);
-			this.tabPage1.Controls.Add(this.label1);
-			this.tabPage1.Controls.Add(this.dgvUsuarios);
-			this.tabPage1.Location = new System.Drawing.Point(4, 22);
-			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(637, 338);
-			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "Usuarios";
-			this.tabPage1.UseVisualStyleBackColor = true;
+			this.tabusu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabusu.BackgroundImage")));
+			this.tabusu.Controls.Add(this.BtnVolver);
+			this.tabusu.Controls.Add(this.BtnEliminarUsuario);
+			this.tabusu.Controls.Add(this.BtnGuardar);
+			this.tabusu.Controls.Add(this.txtUsuario);
+			this.tabusu.Controls.Add(this.txtPass);
+			this.tabusu.Controls.Add(this.lblcontr);
+			this.tabusu.Controls.Add(this.lblusu);
+			this.tabusu.Controls.Add(this.lblcrearnu);
+			this.tabusu.Controls.Add(this.dgvUsuarios);
+			this.tabusu.Location = new System.Drawing.Point(4, 22);
+			this.tabusu.Name = "tabusu";
+			this.tabusu.Padding = new System.Windows.Forms.Padding(3);
+			this.tabusu.Size = new System.Drawing.Size(637, 338);
+			this.tabusu.TabIndex = 0;
+			this.tabusu.Text = "Usuarios/Users";
+			this.tabusu.UseVisualStyleBackColor = true;
 			// 
 			// BtnVolver
 			// 
@@ -170,35 +170,35 @@ namespace ProyectoPE
 			this.txtPass.Size = new System.Drawing.Size(136, 20);
 			this.txtPass.TabIndex = 4;
 			// 
-			// label3
+			// lblcontr
 			// 
-			this.label3.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label3.Location = new System.Drawing.Point(260, 306);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(121, 25);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "Contraseña:";
+			this.lblcontr.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblcontr.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblcontr.Location = new System.Drawing.Point(260, 306);
+			this.lblcontr.Name = "lblcontr";
+			this.lblcontr.Size = new System.Drawing.Size(121, 25);
+			this.lblcontr.TabIndex = 3;
+			this.lblcontr.Text = "Contraseña:";
 			// 
-			// label2
+			// lblusu
 			// 
-			this.label2.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label2.Location = new System.Drawing.Point(280, 275);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(121, 25);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Usuario:";
+			this.lblusu.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblusu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblusu.Location = new System.Drawing.Point(280, 275);
+			this.lblusu.Name = "lblusu";
+			this.lblusu.Size = new System.Drawing.Size(121, 25);
+			this.lblusu.TabIndex = 2;
+			this.lblusu.Text = "Usuario:";
 			// 
-			// label1
+			// lblcrearnu
 			// 
-			this.label1.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label1.Location = new System.Drawing.Point(341, 245);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(156, 25);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Crear nuevo usuario:";
+			this.lblcrearnu.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblcrearnu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblcrearnu.Location = new System.Drawing.Point(341, 245);
+			this.lblcrearnu.Name = "lblcrearnu";
+			this.lblcrearnu.Size = new System.Drawing.Size(156, 25);
+			this.lblcrearnu.TabIndex = 1;
+			this.lblcrearnu.Text = "Crear nuevo usuario:";
 			// 
 			// dgvUsuarios
 			// 
@@ -210,21 +210,21 @@ namespace ProyectoPE
 			this.dgvUsuarios.Size = new System.Drawing.Size(446, 236);
 			this.dgvUsuarios.TabIndex = 0;
 			// 
-			// tabPage2
+			// tabmod
 			// 
-			this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
-			this.tabPage2.Controls.Add(this.btnModificarM);
-			this.tabPage2.Controls.Add(this.btnEliminarM);
-			this.tabPage2.Controls.Add(this.btnVisualizarM);
-			this.tabPage2.Controls.Add(this.btnCrearM);
-			this.tabPage2.Controls.Add(this.label5);
-			this.tabPage2.Location = new System.Drawing.Point(4, 22);
-			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(637, 338);
-			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "Módulos";
-			this.tabPage2.UseVisualStyleBackColor = true;
+			this.tabmod.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabmod.BackgroundImage")));
+			this.tabmod.Controls.Add(this.btnModificarM);
+			this.tabmod.Controls.Add(this.btnEliminarM);
+			this.tabmod.Controls.Add(this.btnVisualizarM);
+			this.tabmod.Controls.Add(this.btnCrearM);
+			this.tabmod.Controls.Add(this.label5);
+			this.tabmod.Location = new System.Drawing.Point(4, 22);
+			this.tabmod.Name = "tabmod";
+			this.tabmod.Padding = new System.Windows.Forms.Padding(3);
+			this.tabmod.Size = new System.Drawing.Size(637, 338);
+			this.tabmod.TabIndex = 1;
+			this.tabmod.Text = "Módulos/Modules";
+			this.tabmod.UseVisualStyleBackColor = true;
 			// 
 			// btnModificarM
 			// 
@@ -280,39 +280,39 @@ namespace ProyectoPE
 			this.label5.TabIndex = 3;
 			this.label5.Text = "Configurar Módulos.";
 			// 
-			// tabPage3
+			// tabpreg
 			// 
-			this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
-			this.tabPage3.Controls.Add(this.button9);
-			this.tabPage3.Controls.Add(this.BtnGuardarPregunta);
-			this.tabPage3.Controls.Add(this.label12);
-			this.tabPage3.Controls.Add(this.label11);
-			this.tabPage3.Controls.Add(this.label10);
-			this.tabPage3.Controls.Add(this.label9);
-			this.tabPage3.Controls.Add(this.label8);
-			this.tabPage3.Controls.Add(this.label7);
-			this.tabPage3.Controls.Add(this.label6);
-			this.tabPage3.Controls.Add(this.txtRespIng);
-			this.tabPage3.Controls.Add(this.txtPreguntaIng);
-			this.tabPage3.Controls.Add(this.txtOp1Esp);
-			this.tabPage3.Controls.Add(this.txtOp4Esp);
-			this.tabPage3.Controls.Add(this.txtOp4Ing);
-			this.tabPage3.Controls.Add(this.txtOp3Ing);
-			this.tabPage3.Controls.Add(this.txtOp1Ing);
-			this.tabPage3.Controls.Add(this.txtOp3Esp);
-			this.tabPage3.Controls.Add(this.txtOp2Esp);
-			this.tabPage3.Controls.Add(this.txtOp2Ing);
-			this.tabPage3.Controls.Add(this.txtRespEsp);
-			this.tabPage3.Controls.Add(this.txtPreguntaEsp);
-			this.tabPage3.Controls.Add(this.cmbModulos);
-			this.tabPage3.Controls.Add(this.pictureBox2);
-			this.tabPage3.Controls.Add(this.pictureBox1);
-			this.tabPage3.Location = new System.Drawing.Point(4, 22);
-			this.tabPage3.Name = "tabPage3";
-			this.tabPage3.Size = new System.Drawing.Size(637, 338);
-			this.tabPage3.TabIndex = 2;
-			this.tabPage3.Text = "Preguntas y Respuestas";
-			this.tabPage3.UseVisualStyleBackColor = true;
+			this.tabpreg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabpreg.BackgroundImage")));
+			this.tabpreg.Controls.Add(this.button9);
+			this.tabpreg.Controls.Add(this.BtnGuardarPregunta);
+			this.tabpreg.Controls.Add(this.label12);
+			this.tabpreg.Controls.Add(this.label11);
+			this.tabpreg.Controls.Add(this.label10);
+			this.tabpreg.Controls.Add(this.label9);
+			this.tabpreg.Controls.Add(this.label8);
+			this.tabpreg.Controls.Add(this.label7);
+			this.tabpreg.Controls.Add(this.label6);
+			this.tabpreg.Controls.Add(this.txtRespIng);
+			this.tabpreg.Controls.Add(this.txtPreguntaIng);
+			this.tabpreg.Controls.Add(this.txtOp1Esp);
+			this.tabpreg.Controls.Add(this.txtOp4Esp);
+			this.tabpreg.Controls.Add(this.txtOp4Ing);
+			this.tabpreg.Controls.Add(this.txtOp3Ing);
+			this.tabpreg.Controls.Add(this.txtOp1Ing);
+			this.tabpreg.Controls.Add(this.txtOp3Esp);
+			this.tabpreg.Controls.Add(this.txtOp2Esp);
+			this.tabpreg.Controls.Add(this.txtOp2Ing);
+			this.tabpreg.Controls.Add(this.txtRespEsp);
+			this.tabpreg.Controls.Add(this.txtPreguntaEsp);
+			this.tabpreg.Controls.Add(this.cmbModulos);
+			this.tabpreg.Controls.Add(this.pictureBox2);
+			this.tabpreg.Controls.Add(this.pictureBox1);
+			this.tabpreg.Location = new System.Drawing.Point(4, 22);
+			this.tabpreg.Name = "tabpreg";
+			this.tabpreg.Size = new System.Drawing.Size(637, 338);
+			this.tabpreg.TabIndex = 2;
+			this.tabpreg.Text = "Preguntas y Respuestas/questions and answers";
+			this.tabpreg.UseVisualStyleBackColor = true;
 			// 
 			// button9
 			// 
@@ -541,12 +541,12 @@ namespace ProyectoPE
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Panel de Administrador";
 			this.Usuarios.ResumeLayout(false);
-			this.tabPage1.ResumeLayout(false);
-			this.tabPage1.PerformLayout();
+			this.tabusu.ResumeLayout(false);
+			this.tabusu.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
-			this.tabPage2.ResumeLayout(false);
-			this.tabPage3.ResumeLayout(false);
-			this.tabPage3.PerformLayout();
+			this.tabmod.ResumeLayout(false);
+			this.tabpreg.ResumeLayout(false);
+			this.tabpreg.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
@@ -577,22 +577,22 @@ namespace ProyectoPE
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Button BtnGuardarPregunta;
 		private System.Windows.Forms.Button button9;
-		private System.Windows.Forms.TabPage tabPage3;
+		private System.Windows.Forms.TabPage tabpreg;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button btnCrearM;
 		private System.Windows.Forms.Button btnVisualizarM;
 		private System.Windows.Forms.Button btnEliminarM;
 		private System.Windows.Forms.Button btnModificarM;
-		private System.Windows.Forms.TabPage tabPage2;
+		private System.Windows.Forms.TabPage tabmod;
 		private System.Windows.Forms.DataGridView dgvUsuarios;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label lblcrearnu;
+		private System.Windows.Forms.Label lblusu;
+		private System.Windows.Forms.Label lblcontr;
 		private System.Windows.Forms.TextBox txtPass;
 		private System.Windows.Forms.TextBox txtUsuario;
 		private System.Windows.Forms.Button BtnGuardar;
 		private System.Windows.Forms.Button BtnEliminarUsuario;
-		private System.Windows.Forms.TabPage tabPage1;
+		private System.Windows.Forms.TabPage tabusu;
 		private System.Windows.Forms.TabControl Usuarios;
 	}
 }
