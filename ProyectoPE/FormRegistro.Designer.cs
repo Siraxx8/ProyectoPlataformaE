@@ -37,80 +37,66 @@ namespace ProyectoPE
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistro));
-			this.label1 = new System.Windows.Forms.Label();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.BtnVolver = new System.Windows.Forms.Button();
-			this.BtnRegistrarse = new System.Windows.Forms.Button();
-			this.textNuevaPass = new System.Windows.Forms.TextBox();
-			this.textNuevoUsuario = new System.Windows.Forms.TextBox();
+			this.lblregi = new System.Windows.Forms.Label();
+			this.lblusu = new System.Windows.Forms.Label();
+			this.lblrol = new System.Windows.Forms.Label();
+			this.lblcon = new System.Windows.Forms.Label();
 			this.cmbRol = new System.Windows.Forms.ComboBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.Nombr = new System.Windows.Forms.Label();
+			this.textNuevoUsuario = new System.Windows.Forms.TextBox();
+			this.textNuevaPass = new System.Windows.Forms.TextBox();
+			this.BtnRegistrarse = new System.Windows.Forms.Button();
+			this.BtnVolver = new System.Windows.Forms.Button();
+			this.dgvNombres = new System.Windows.Forms.DataGridView();
+			this.lblns = new System.Windows.Forms.Label();
+			this.panel1 = new System.Windows.Forms.Panel();
+			((System.ComponentModel.ISupportInitialize)(this.dgvNombres)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// label1
+			// lblregi
 			// 
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Haettenschweiler", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label1.Location = new System.Drawing.Point(264, 29);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(225, 62);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Registro";
+			this.lblregi.BackColor = System.Drawing.Color.Transparent;
+			this.lblregi.Font = new System.Drawing.Font("Haettenschweiler", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblregi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblregi.Location = new System.Drawing.Point(48, 0);
+			this.lblregi.Name = "lblregi";
+			this.lblregi.Size = new System.Drawing.Size(572, 79);
+			this.lblregi.TabIndex = 0;
+			this.lblregi.Text = "Registro";
+			this.lblregi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// panel1
+			// lblusu
 			// 
-			this.panel1.Controls.Add(this.BtnVolver);
-			this.panel1.Controls.Add(this.BtnRegistrarse);
-			this.panel1.Controls.Add(this.textNuevaPass);
-			this.panel1.Controls.Add(this.textNuevoUsuario);
-			this.panel1.Controls.Add(this.cmbRol);
-			this.panel1.Controls.Add(this.label4);
-			this.panel1.Controls.Add(this.label3);
-			this.panel1.Controls.Add(this.Nombr);
-			this.panel1.Location = new System.Drawing.Point(33, 82);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(629, 324);
-			this.panel1.TabIndex = 1;
+			this.lblusu.BackColor = System.Drawing.Color.Transparent;
+			this.lblusu.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblusu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblusu.Location = new System.Drawing.Point(26, 17);
+			this.lblusu.Name = "lblusu";
+			this.lblusu.Size = new System.Drawing.Size(211, 27);
+			this.lblusu.TabIndex = 2;
+			this.lblusu.Text = "Nombre de usuario:";
 			// 
-			// BtnVolver
+			// lblrol
 			// 
-			this.BtnVolver.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnVolver.Location = new System.Drawing.Point(487, 261);
-			this.BtnVolver.Name = "BtnVolver";
-			this.BtnVolver.Size = new System.Drawing.Size(100, 31);
-			this.BtnVolver.TabIndex = 9;
-			this.BtnVolver.Text = "Volver";
-			this.BtnVolver.UseVisualStyleBackColor = true;
-			this.BtnVolver.Click += new System.EventHandler(this.BtnVolverClick);
+			this.lblrol.BackColor = System.Drawing.Color.Transparent;
+			this.lblrol.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblrol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblrol.Location = new System.Drawing.Point(26, 161);
+			this.lblrol.Name = "lblrol";
+			this.lblrol.Size = new System.Drawing.Size(131, 27);
+			this.lblrol.TabIndex = 3;
+			this.lblrol.Text = "Rol:";
 			// 
-			// BtnRegistrarse
+			// lblcon
 			// 
-			this.BtnRegistrarse.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnRegistrarse.Location = new System.Drawing.Point(26, 261);
-			this.BtnRegistrarse.Name = "BtnRegistrarse";
-			this.BtnRegistrarse.Size = new System.Drawing.Size(100, 31);
-			this.BtnRegistrarse.TabIndex = 8;
-			this.BtnRegistrarse.Text = "Registrarse";
-			this.BtnRegistrarse.UseVisualStyleBackColor = true;
-			this.BtnRegistrarse.Click += new System.EventHandler(this.BtnRegistrarseClick);
-			// 
-			// textNuevaPass
-			// 
-			this.textNuevaPass.Location = new System.Drawing.Point(26, 117);
-			this.textNuevaPass.Name = "textNuevaPass";
-			this.textNuevaPass.Size = new System.Drawing.Size(156, 20);
-			this.textNuevaPass.TabIndex = 7;
-			// 
-			// textNuevoUsuario
-			// 
-			this.textNuevoUsuario.Location = new System.Drawing.Point(26, 47);
-			this.textNuevoUsuario.Name = "textNuevoUsuario";
-			this.textNuevoUsuario.Size = new System.Drawing.Size(156, 20);
-			this.textNuevoUsuario.TabIndex = 6;
+			this.lblcon.BackColor = System.Drawing.Color.Transparent;
+			this.lblcon.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblcon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblcon.Location = new System.Drawing.Point(26, 87);
+			this.lblcon.Name = "lblcon";
+			this.lblcon.Size = new System.Drawing.Size(131, 27);
+			this.lblcon.TabIndex = 4;
+			this.lblcon.Text = "Contraseña:";
 			// 
 			// cmbRol
 			// 
@@ -123,38 +109,85 @@ namespace ProyectoPE
 			this.cmbRol.Size = new System.Drawing.Size(121, 21);
 			this.cmbRol.TabIndex = 5;
 			// 
-			// label4
+			// textNuevoUsuario
 			// 
-			this.label4.BackColor = System.Drawing.Color.Transparent;
-			this.label4.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label4.Location = new System.Drawing.Point(26, 87);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(131, 27);
-			this.label4.TabIndex = 4;
-			this.label4.Text = "Contraseña:";
+			this.textNuevoUsuario.Location = new System.Drawing.Point(26, 47);
+			this.textNuevoUsuario.Name = "textNuevoUsuario";
+			this.textNuevoUsuario.Size = new System.Drawing.Size(156, 20);
+			this.textNuevoUsuario.TabIndex = 6;
 			// 
-			// label3
+			// textNuevaPass
 			// 
-			this.label3.BackColor = System.Drawing.Color.Transparent;
-			this.label3.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.label3.Location = new System.Drawing.Point(26, 161);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(131, 27);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "Rol:";
+			this.textNuevaPass.Location = new System.Drawing.Point(26, 117);
+			this.textNuevaPass.Name = "textNuevaPass";
+			this.textNuevaPass.Size = new System.Drawing.Size(156, 20);
+			this.textNuevaPass.TabIndex = 7;
 			// 
-			// Nombr
+			// BtnRegistrarse
 			// 
-			this.Nombr.BackColor = System.Drawing.Color.Transparent;
-			this.Nombr.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Nombr.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.Nombr.Location = new System.Drawing.Point(26, 17);
-			this.Nombr.Name = "Nombr";
-			this.Nombr.Size = new System.Drawing.Size(131, 27);
-			this.Nombr.TabIndex = 2;
-			this.Nombr.Text = "Nombre de usuario:";
+			this.BtnRegistrarse.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnRegistrarse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.BtnRegistrarse.Location = new System.Drawing.Point(26, 261);
+			this.BtnRegistrarse.Name = "BtnRegistrarse";
+			this.BtnRegistrarse.Size = new System.Drawing.Size(100, 31);
+			this.BtnRegistrarse.TabIndex = 8;
+			this.BtnRegistrarse.Text = "Registrarse";
+			this.BtnRegistrarse.UseVisualStyleBackColor = true;
+			this.BtnRegistrarse.Click += new System.EventHandler(this.BtnRegistrarseClick);
+			// 
+			// BtnVolver
+			// 
+			this.BtnVolver.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.BtnVolver.Location = new System.Drawing.Point(174, 261);
+			this.BtnVolver.Name = "BtnVolver";
+			this.BtnVolver.Size = new System.Drawing.Size(100, 31);
+			this.BtnVolver.TabIndex = 9;
+			this.BtnVolver.Text = "Volver";
+			this.BtnVolver.UseVisualStyleBackColor = true;
+			this.BtnVolver.Click += new System.EventHandler(this.BtnVolverClick);
+			// 
+			// dgvNombres
+			// 
+			this.dgvNombres.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+									| System.Windows.Forms.AnchorStyles.Right)));
+			this.dgvNombres.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvNombres.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.dgvNombres.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dgvNombres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvNombres.Location = new System.Drawing.Point(366, 47);
+			this.dgvNombres.Name = "dgvNombres";
+			this.dgvNombres.Size = new System.Drawing.Size(240, 266);
+			this.dgvNombres.TabIndex = 10;
+			// 
+			// lblns
+			// 
+			this.lblns.BackColor = System.Drawing.Color.Transparent;
+			this.lblns.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblns.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblns.Location = new System.Drawing.Point(351, 9);
+			this.lblns.Name = "lblns";
+			this.lblns.Size = new System.Drawing.Size(292, 35);
+			this.lblns.TabIndex = 11;
+			this.lblns.Text = "Nombres que no se pueden usar:";
+			// 
+			// panel1
+			// 
+			this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+			this.panel1.Controls.Add(this.dgvNombres);
+			this.panel1.Controls.Add(this.BtnVolver);
+			this.panel1.Controls.Add(this.BtnRegistrarse);
+			this.panel1.Controls.Add(this.textNuevaPass);
+			this.panel1.Controls.Add(this.textNuevoUsuario);
+			this.panel1.Controls.Add(this.cmbRol);
+			this.panel1.Controls.Add(this.lblcon);
+			this.panel1.Controls.Add(this.lblrol);
+			this.panel1.Controls.Add(this.lblusu);
+			this.panel1.Controls.Add(this.lblns);
+			this.panel1.Location = new System.Drawing.Point(32, 82);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(632, 325);
+			this.panel1.TabIndex = 1;
 			// 
 			// FormRegistro
 			// 
@@ -163,25 +196,28 @@ namespace ProyectoPE
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(687, 468);
+			this.Controls.Add(this.lblregi);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.label1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "FormRegistro";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Registro";
+			((System.ComponentModel.ISupportInitialize)(this.dgvNombres)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.DataGridView dgvNombres;
+		private System.Windows.Forms.Label lblns;
 		private System.Windows.Forms.Button BtnRegistrarse;
 		private System.Windows.Forms.Button BtnVolver;
 		private System.Windows.Forms.ComboBox cmbRol;
 		private System.Windows.Forms.TextBox textNuevoUsuario;
 		private System.Windows.Forms.TextBox textNuevaPass;
-		private System.Windows.Forms.Label Nombr;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label lblusu;
+		private System.Windows.Forms.Label lblrol;
+		private System.Windows.Forms.Label lblcon;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lblregi;
 	}
 }

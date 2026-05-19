@@ -15,7 +15,8 @@ namespace ProyectoPE
 		public static bool idiEspañol = true;
 		//preguntas para nuevo modulo
 		public static Dictionary<string, DatosPregunta> PreguntasDinamicas = new Dictionary<string, DatosPregunta>();
-   		public class DatosPregunta {
+   		
+		public class DatosPregunta {
         public string PreguntaEsp, PreguntaIng;
         public string Op1Esp, Op2Esp, Op3Esp, Op4Esp;
         public string Op1Ing, Op2Ing, Op3Ing, Op4Ing;
@@ -34,9 +35,8 @@ namespace ProyectoPE
         	}
         set 
         	{
-        if (!string.IsNullOrEmpty(UsuarioLogeado))
-            {
-                PuntuacionesJugadores[UsuarioLogeado] = value;
+        if (!string.IsNullOrEmpty(UsuarioLogeado)){
+           PuntuacionesJugadores[UsuarioLogeado] = value;
             }
         }
     }

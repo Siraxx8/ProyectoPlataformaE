@@ -37,30 +37,31 @@ namespace ProyectoPE
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-			this.label1 = new System.Windows.Forms.Label();
+			this.lblsesion = new System.Windows.Forms.Label();
 			this.textUserLogin = new System.Windows.Forms.TextBox();
 			this.textPassLogin = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
+			this.lblusu = new System.Windows.Forms.Label();
+			this.lblcontra = new System.Windows.Forms.Label();
 			this.BtnIniciar = new System.Windows.Forms.Button();
 			this.BtnVolver = new System.Windows.Forms.Button();
 			this.ChkVerContra = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
-			// label1
+			// lblsesion
 			// 
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label1.Location = new System.Drawing.Point(35, 18);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(250, 61);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Inicio de Sesión";
+			this.lblsesion.BackColor = System.Drawing.Color.Transparent;
+			this.lblsesion.Font = new System.Drawing.Font("Haettenschweiler", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblsesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblsesion.Location = new System.Drawing.Point(35, 18);
+			this.lblsesion.Name = "lblsesion";
+			this.lblsesion.Size = new System.Drawing.Size(317, 61);
+			this.lblsesion.TabIndex = 0;
+			this.lblsesion.Text = "Inicio de Sesión";
 			// 
 			// textUserLogin
 			// 
 			this.textUserLogin.Location = new System.Drawing.Point(35, 147);
+			this.textUserLogin.MaxLength = 50;
 			this.textUserLogin.Name = "textUserLogin";
 			this.textUserLogin.Size = new System.Drawing.Size(149, 20);
 			this.textUserLogin.TabIndex = 1;
@@ -68,39 +69,42 @@ namespace ProyectoPE
 			// textPassLogin
 			// 
 			this.textPassLogin.Location = new System.Drawing.Point(35, 223);
+			this.textPassLogin.MaxLength = 50;
 			this.textPassLogin.Name = "textPassLogin";
+			this.textPassLogin.PasswordChar = '*';
 			this.textPassLogin.Size = new System.Drawing.Size(149, 20);
 			this.textPassLogin.TabIndex = 2;
 			// 
-			// label2
+			// lblusu
 			// 
-			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label2.Location = new System.Drawing.Point(35, 121);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(149, 23);
-			this.label2.TabIndex = 3;
-			this.label2.Text = "Ingresar usuario:";
+			this.lblusu.BackColor = System.Drawing.Color.Transparent;
+			this.lblusu.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblusu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblusu.Location = new System.Drawing.Point(35, 111);
+			this.lblusu.Name = "lblusu";
+			this.lblusu.Size = new System.Drawing.Size(168, 33);
+			this.lblusu.TabIndex = 3;
+			this.lblusu.Text = "Ingresar usuario:";
 			// 
-			// label3
+			// lblcontra
 			// 
-			this.label3.BackColor = System.Drawing.Color.Transparent;
-			this.label3.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label3.Location = new System.Drawing.Point(35, 197);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(149, 23);
-			this.label3.TabIndex = 4;
-			this.label3.Text = "Ingresar contraseña:";
+			this.lblcontra.BackColor = System.Drawing.Color.Transparent;
+			this.lblcontra.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblcontra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lblcontra.Location = new System.Drawing.Point(35, 191);
+			this.lblcontra.Name = "lblcontra";
+			this.lblcontra.Size = new System.Drawing.Size(185, 29);
+			this.lblcontra.TabIndex = 4;
+			this.lblcontra.Text = "Ingresar contraseña:";
 			// 
 			// BtnIniciar
 			// 
 			this.BtnIniciar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.BtnIniciar.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnIniciar.Location = new System.Drawing.Point(34, 341);
+			this.BtnIniciar.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnIniciar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.BtnIniciar.Location = new System.Drawing.Point(34, 334);
 			this.BtnIniciar.Name = "BtnIniciar";
-			this.BtnIniciar.Size = new System.Drawing.Size(105, 32);
+			this.BtnIniciar.Size = new System.Drawing.Size(110, 39);
 			this.BtnIniciar.TabIndex = 5;
 			this.BtnIniciar.Text = "Iniciar sesión";
 			this.BtnIniciar.UseVisualStyleBackColor = false;
@@ -109,10 +113,11 @@ namespace ProyectoPE
 			// BtnVolver
 			// 
 			this.BtnVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.BtnVolver.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnVolver.Location = new System.Drawing.Point(520, 341);
+			this.BtnVolver.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.BtnVolver.Location = new System.Drawing.Point(519, 334);
 			this.BtnVolver.Name = "BtnVolver";
-			this.BtnVolver.Size = new System.Drawing.Size(105, 32);
+			this.BtnVolver.Size = new System.Drawing.Size(109, 39);
 			this.BtnVolver.TabIndex = 6;
 			this.BtnVolver.Text = "Volver";
 			this.BtnVolver.UseVisualStyleBackColor = false;
@@ -121,11 +126,11 @@ namespace ProyectoPE
 			// ChkVerContra
 			// 
 			this.ChkVerContra.BackColor = System.Drawing.Color.Transparent;
-			this.ChkVerContra.Font = new System.Drawing.Font("Haettenschweiler", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.ChkVerContra.Font = new System.Drawing.Font("Heebo", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ChkVerContra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.ChkVerContra.Location = new System.Drawing.Point(35, 264);
 			this.ChkVerContra.Name = "ChkVerContra";
-			this.ChkVerContra.Size = new System.Drawing.Size(149, 24);
+			this.ChkVerContra.Size = new System.Drawing.Size(185, 24);
 			this.ChkVerContra.TabIndex = 7;
 			this.ChkVerContra.Text = "Mostrar contraseña";
 			this.ChkVerContra.UseVisualStyleBackColor = false;
@@ -141,11 +146,11 @@ namespace ProyectoPE
 			this.Controls.Add(this.ChkVerContra);
 			this.Controls.Add(this.BtnVolver);
 			this.Controls.Add(this.BtnIniciar);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
+			this.Controls.Add(this.lblcontra);
+			this.Controls.Add(this.lblusu);
 			this.Controls.Add(this.textPassLogin);
 			this.Controls.Add(this.textUserLogin);
-			this.Controls.Add(this.label1);
+			this.Controls.Add(this.lblsesion);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "FormLogin";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -156,10 +161,10 @@ namespace ProyectoPE
 		private System.Windows.Forms.CheckBox ChkVerContra;
 		private System.Windows.Forms.Button BtnVolver;
 		private System.Windows.Forms.Button BtnIniciar;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label lblcontra;
+		private System.Windows.Forms.Label lblusu;
 		private System.Windows.Forms.TextBox textPassLogin;
 		private System.Windows.Forms.TextBox textUserLogin;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lblsesion;
 	}
 }

@@ -42,7 +42,6 @@ namespace ProyectoPE
 			this.btnOp2 = new System.Windows.Forms.Button();
 			this.btnOp4 = new System.Windows.Forms.Button();
 			this.btnIdioma = new System.Windows.Forms.Button();
-			this.BtnVolver = new System.Windows.Forms.Button();
 			this.lblPregunta = new System.Windows.Forms.Label();
 			this.picComponente = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.picComponente)).BeginInit();
@@ -50,10 +49,12 @@ namespace ProyectoPE
 			// 
 			// btnOp1
 			// 
+			this.btnOp1.BackColor = System.Drawing.SystemColors.Control;
 			this.btnOp1.Font = new System.Drawing.Font("Haettenschweiler", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnOp1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.btnOp1.Location = new System.Drawing.Point(12, 84);
 			this.btnOp1.Name = "btnOp1";
-			this.btnOp1.Size = new System.Drawing.Size(180, 57);
+			this.btnOp1.Size = new System.Drawing.Size(273, 57);
 			this.btnOp1.TabIndex = 0;
 			this.btnOp1.Text = "Opción 1";
 			this.btnOp1.UseVisualStyleBackColor = false;
@@ -61,58 +62,55 @@ namespace ProyectoPE
 			// 
 			// btnOp3
 			// 
+			this.btnOp3.BackColor = System.Drawing.SystemColors.Control;
 			this.btnOp3.Font = new System.Drawing.Font("Haettenschweiler", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnOp3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.btnOp3.Location = new System.Drawing.Point(12, 231);
 			this.btnOp3.Name = "btnOp3";
-			this.btnOp3.Size = new System.Drawing.Size(180, 57);
+			this.btnOp3.Size = new System.Drawing.Size(273, 57);
 			this.btnOp3.TabIndex = 1;
 			this.btnOp3.Text = "Opción 3";
-			this.btnOp3.UseVisualStyleBackColor = true;
+			this.btnOp3.UseVisualStyleBackColor = false;
 			this.btnOp3.Click += new System.EventHandler(this.BtnOp3Click);
 			// 
 			// btnOp2
 			// 
+			this.btnOp2.BackColor = System.Drawing.SystemColors.Control;
 			this.btnOp2.Font = new System.Drawing.Font("Haettenschweiler", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnOp2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.btnOp2.Location = new System.Drawing.Point(12, 157);
 			this.btnOp2.Name = "btnOp2";
-			this.btnOp2.Size = new System.Drawing.Size(180, 57);
+			this.btnOp2.Size = new System.Drawing.Size(273, 57);
 			this.btnOp2.TabIndex = 2;
 			this.btnOp2.Text = "Opción 2";
-			this.btnOp2.UseVisualStyleBackColor = true;
+			this.btnOp2.UseVisualStyleBackColor = false;
 			this.btnOp2.Click += new System.EventHandler(this.BtnOp2Click);
 			// 
 			// btnOp4
 			// 
+			this.btnOp4.BackColor = System.Drawing.SystemColors.Control;
 			this.btnOp4.Font = new System.Drawing.Font("Haettenschweiler", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnOp4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.btnOp4.Location = new System.Drawing.Point(12, 303);
 			this.btnOp4.Name = "btnOp4";
-			this.btnOp4.Size = new System.Drawing.Size(180, 57);
+			this.btnOp4.Size = new System.Drawing.Size(273, 57);
 			this.btnOp4.TabIndex = 3;
 			this.btnOp4.Text = "Opción 4";
-			this.btnOp4.UseVisualStyleBackColor = true;
+			this.btnOp4.UseVisualStyleBackColor = false;
 			this.btnOp4.Click += new System.EventHandler(this.BtnOp4Click);
 			// 
 			// btnIdioma
 			// 
-			this.btnIdioma.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnIdioma.BackColor = System.Drawing.SystemColors.Control;
+			this.btnIdioma.Font = new System.Drawing.Font("Haettenschweiler", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnIdioma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.btnIdioma.Location = new System.Drawing.Point(12, 406);
 			this.btnIdioma.Name = "btnIdioma";
 			this.btnIdioma.Size = new System.Drawing.Size(109, 45);
 			this.btnIdioma.TabIndex = 4;
 			this.btnIdioma.Text = "Idioma/language";
-			this.btnIdioma.UseVisualStyleBackColor = true;
+			this.btnIdioma.UseVisualStyleBackColor = false;
 			this.btnIdioma.Click += new System.EventHandler(this.BtnIdiomaClick);
-			// 
-			// BtnVolver
-			// 
-			this.BtnVolver.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnVolver.Location = new System.Drawing.Point(570, 406);
-			this.BtnVolver.Name = "BtnVolver";
-			this.BtnVolver.Size = new System.Drawing.Size(109, 45);
-			this.BtnVolver.TabIndex = 5;
-			this.BtnVolver.Text = "Volver";
-			this.BtnVolver.UseVisualStyleBackColor = true;
-			this.BtnVolver.Click += new System.EventHandler(this.BtnVolverClick);
 			// 
 			// lblPregunta
 			// 
@@ -128,11 +126,12 @@ namespace ProyectoPE
 			// 
 			// picComponente
 			// 
-			this.picComponente.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-			this.picComponente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.picComponente.Location = new System.Drawing.Point(228, 84);
+			this.picComponente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.picComponente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.picComponente.Location = new System.Drawing.Point(291, 84);
 			this.picComponente.Name = "picComponente";
-			this.picComponente.Size = new System.Drawing.Size(442, 276);
+			this.picComponente.Size = new System.Drawing.Size(399, 276);
+			this.picComponente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.picComponente.TabIndex = 7;
 			this.picComponente.TabStop = false;
 			// 
@@ -145,7 +144,6 @@ namespace ProyectoPE
 			this.ClientSize = new System.Drawing.Size(702, 463);
 			this.Controls.Add(this.picComponente);
 			this.Controls.Add(this.lblPregunta);
-			this.Controls.Add(this.BtnVolver);
 			this.Controls.Add(this.btnIdioma);
 			this.Controls.Add(this.btnOp4);
 			this.Controls.Add(this.btnOp2);
@@ -160,7 +158,6 @@ namespace ProyectoPE
 		}
 		private System.Windows.Forms.PictureBox picComponente;
 		private System.Windows.Forms.Label lblPregunta;
-		private System.Windows.Forms.Button BtnVolver;
 		private System.Windows.Forms.Button btnIdioma;
 		private System.Windows.Forms.Button btnOp4;
 		private System.Windows.Forms.Button btnOp2;

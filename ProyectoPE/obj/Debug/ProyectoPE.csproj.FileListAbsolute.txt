@@ -11,4 +11,4 @@ C:\Users\Sira\Documents\SharpDevelop Projects\ProyectoPE\ProyectoPE\bin\Debug\Pr
 C:\Users\Sira\Documents\SharpDevelop Projects\ProyectoPE\ProyectoPE\bin\Debug\ProyectoPE.pdb
 C:\Users\Sira\Documents\SharpDevelop Projects\ProyectoPE\ProyectoPE\obj\Debug\ProyectoPE.exe
 C:\Users\Sira\Documents\SharpDevelop Projects\ProyectoPE\ProyectoPE\obj\Debug\ProyectoPE.pdb
-C:\Users\Sira\Documents\SharpDevelop Projects\ProyectoPE\ProyectoPE\obj\Debug\ProyectoPE.FormRespuestas.resources
+C:\Users\Sira\Documents\SharpDevelop Projects\ProyectoPE\ProyectoPE\bin\Debug\MySql.Data.dll

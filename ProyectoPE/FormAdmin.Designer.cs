@@ -102,6 +102,7 @@ namespace ProyectoPE
 			// 
 			// tabPage1
 			// 
+			this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
 			this.tabPage1.Controls.Add(this.BtnVolver);
 			this.tabPage1.Controls.Add(this.BtnEliminarUsuario);
 			this.tabPage1.Controls.Add(this.BtnGuardar);
@@ -121,7 +122,8 @@ namespace ProyectoPE
 			// 
 			// BtnVolver
 			// 
-			this.BtnVolver.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnVolver.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnVolver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.BtnVolver.Location = new System.Drawing.Point(6, 294);
 			this.BtnVolver.Name = "BtnVolver";
 			this.BtnVolver.Size = new System.Drawing.Size(87, 36);
@@ -132,7 +134,8 @@ namespace ProyectoPE
 			// 
 			// BtnEliminarUsuario
 			// 
-			this.BtnEliminarUsuario.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnEliminarUsuario.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnEliminarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.BtnEliminarUsuario.Location = new System.Drawing.Point(15, 90);
 			this.BtnEliminarUsuario.Name = "BtnEliminarUsuario";
 			this.BtnEliminarUsuario.Size = new System.Drawing.Size(135, 46);
@@ -143,7 +146,8 @@ namespace ProyectoPE
 			// 
 			// BtnGuardar
 			// 
-			this.BtnGuardar.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnGuardar.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BtnGuardar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.BtnGuardar.Location = new System.Drawing.Point(530, 275);
 			this.BtnGuardar.Name = "BtnGuardar";
 			this.BtnGuardar.Size = new System.Drawing.Size(87, 36);
@@ -168,8 +172,9 @@ namespace ProyectoPE
 			// 
 			// label3
 			// 
-			this.label3.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(280, 310);
+			this.label3.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label3.Location = new System.Drawing.Point(260, 306);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(121, 25);
 			this.label3.TabIndex = 3;
@@ -177,8 +182,9 @@ namespace ProyectoPE
 			// 
 			// label2
 			// 
-			this.label2.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(299, 275);
+			this.label2.Font = new System.Drawing.Font("Haettenschweiler", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label2.Location = new System.Drawing.Point(280, 275);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(121, 25);
 			this.label2.TabIndex = 2;
@@ -186,15 +192,17 @@ namespace ProyectoPE
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(365, 247);
+			this.label1.Font = new System.Drawing.Font("Haettenschweiler", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label1.Location = new System.Drawing.Point(341, 245);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(121, 25);
+			this.label1.Size = new System.Drawing.Size(156, 25);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Crear nuevo usuario:";
 			// 
 			// dgvUsuarios
 			// 
+			this.dgvUsuarios.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
 			this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvUsuarios.Location = new System.Drawing.Point(185, 6);
 			this.dgvUsuarios.Name = "dgvUsuarios";
@@ -204,6 +212,7 @@ namespace ProyectoPE
 			// 
 			// tabPage2
 			// 
+			this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
 			this.tabPage2.Controls.Add(this.btnModificarM);
 			this.tabPage2.Controls.Add(this.btnEliminarM);
 			this.tabPage2.Controls.Add(this.btnVisualizarM);
@@ -264,6 +273,7 @@ namespace ProyectoPE
 			// label5
 			// 
 			this.label5.Font = new System.Drawing.Font("Haettenschweiler", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.label5.Location = new System.Drawing.Point(193, 17);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(289, 47);
@@ -272,6 +282,7 @@ namespace ProyectoPE
 			// 
 			// tabPage3
 			// 
+			this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
 			this.tabPage3.Controls.Add(this.button9);
 			this.tabPage3.Controls.Add(this.BtnGuardarPregunta);
 			this.tabPage3.Controls.Add(this.label12);
@@ -335,7 +346,8 @@ namespace ProyectoPE
 			// 
 			// label11
 			// 
-			this.label11.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.Font = new System.Drawing.Font("Haettenschweiler", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.label11.Location = new System.Drawing.Point(45, 18);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(121, 25);
@@ -381,6 +393,7 @@ namespace ProyectoPE
 			// label6
 			// 
 			this.label6.Font = new System.Drawing.Font("Haettenschweiler", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.label6.Location = new System.Drawing.Point(45, 133);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(121, 25);
@@ -483,7 +496,6 @@ namespace ProyectoPE
 			this.cmbModulos.Name = "cmbModulos";
 			this.cmbModulos.Size = new System.Drawing.Size(146, 21);
 			this.cmbModulos.TabIndex = 0;
-			
 			// 
 			// pictureBox2
 			// 
@@ -508,11 +520,12 @@ namespace ProyectoPE
 			this.label4.BackColor = System.Drawing.Color.Transparent;
 			this.label4.Font = new System.Drawing.Font("Haettenschweiler", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label4.Location = new System.Drawing.Point(157, 9);
+			this.label4.Location = new System.Drawing.Point(12, -1);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(379, 46);
+			this.label4.Size = new System.Drawing.Size(684, 56);
 			this.label4.TabIndex = 3;
-			this.label4.Text = "Panel de Administrador.";
+			this.label4.Text = "Panel de Administrador";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// FormAdmin
 			// 
